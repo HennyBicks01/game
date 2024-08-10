@@ -48,6 +48,12 @@ function Multiplayer.hostGame(game, setStatusMessage)
         setStatusMessage("Server error: " .. tostring(msg), 5)
     end)
 
+    server:on('shoot', function(data, client)
+        print("Server received shoot event:", data.playerIndex, data.x, data.y, data.dx, data.dy)
+        game:addBullet(data)
+        server:sendToAllBut(client, 'shoot', data)
+    end)
+
     game:load()
     game.localPlayerIndex = 1  -- Set the local player as the first player
     setStatusMessage("Hosting game. Waiting for player... Code: " .. hostCode, 10)
@@ -98,6 +104,11 @@ function Multiplayer.joinGame(game, setStatusMessage, code)
     client:on('error', function(msg)
         print("Client error: " .. tostring(msg))
         setStatusMessage("Error: " .. tostring(msg), 5)
+    end)
+
+    client:on('shoot', function(data)
+        print("Client received shoot event:", data.playerIndex, data.x, data.y, data.dx, data.dy)
+        game:addBullet(data)
     end)
 
     client:connect()

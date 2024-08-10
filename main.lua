@@ -119,6 +119,8 @@ function love.mousepressed(x, y, button, istouch, presses)
                 end
             end
         end
+    elseif (gameState == 'playing' or gameState == 'hosting' or gameState == 'joined') and button == 1 then
+        game:shoot(x, y)
     end
 end
 
