@@ -9,6 +9,7 @@ local hostCode
 local joinCode = ''
 local statusMessage = ''
 local statusTimer = 0
+local isFullscreen = false
 
 local debugFile
 
@@ -29,9 +30,10 @@ function love.load()
     love.window.setMode(800, 600)
     
     buttons = {
-        singleplayer = {x = 300, y = 150, width = 200, height = 50, text = "Singleplayer"},
-        host = {x = 300, y = 250, width = 200, height = 50, text = "Host Game"},
-        join = {x = 300, y = 350, width = 200, height = 50, text = "Join Game"}
+        singleplayer = {x = 300, y = 100, width = 200, height = 50, text = "Singleplayer"},
+        host = {x = 300, y = 200, width = 200, height = 50, text = "Host Game"},
+        join = {x = 300, y = 300, width = 200, height = 50, text = "Join Game"},
+        fullscreen = {x = 300, y = 400, width = 200, height = 50, text = "Fullscreen"}
     }
 end
 
@@ -65,6 +67,16 @@ function love.update(dt)
         print("Updating server (always)")
         server:update() 
     end
+
+    -- Update button positions based on window size
+    local windowWidth, windowHeight = love.graphics.getDimensions()
+    for _, button in pairs(buttons) do
+        button.x = (windowWidth - button.width) / 2
+    end
+    buttons.singleplayer.y = windowHeight * 0.2
+    buttons.host.y = windowHeight * 0.4
+    buttons.join.y = windowHeight * 0.6
+    buttons.fullscreen.y = windowHeight * 0.8
 end
 
 
@@ -96,11 +108,17 @@ end
 
 function drawMenu()
     love.graphics.setColor(1, 1, 1)
-    love.graphics.printf("Dot Game", 0, 100, 800, "center")
+    love.graphics.printf("Dot Game", 0, 50, 800, "center")
     
-    for _, button in pairs(buttons) do
+    for name, button in pairs(buttons) do
         love.graphics.rectangle("line", button.x, button.y, button.width, button.height)
         love.graphics.printf(button.text, button.x, button.y + 15, button.width, "center")
+        
+        -- Add indicator for fullscreen button
+        if name == "fullscreen" then
+            local status = isFullscreen and "ON" or "OFF"
+            love.graphics.printf(status, button.x, button.y + 35, button.width, "center")
+        end
     end
 end
 
@@ -116,11 +134,22 @@ function love.mousepressed(x, y, button, istouch, presses)
                 elseif name == 'join' then
                     gameState = 'joining'
                     joinCode = ''  -- Reset join code when entering join mode
+                elseif name == 'fullscreen' then
+                    toggleFullscreen()
                 end
             end
         end
     elseif (gameState == 'playing' or gameState == 'hosting' or gameState == 'joined') and button == 1 then
         game:shoot(x, y)
+    end
+end
+
+function toggleFullscreen()
+    isFullscreen = not isFullscreen
+    love.window.setFullscreen(isFullscreen)
+    
+    if not isFullscreen then
+        love.window.setMode(800, 600)  -- Reset to original window size when exiting fullscreen
     end
 end
 

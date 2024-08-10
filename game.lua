@@ -85,7 +85,7 @@ function Game:update(dt)
             print("Client sending update:", self.localPlayerIndex, player.x, player.y)
             _G.client:send('update', updateData)
         end
-        print("Local player moved from", oldX, oldY, "to", player.x, player.y)
+        -- print("Local player moved from", oldX, oldY, "to", player.x, player.y)
     end
 end
 
