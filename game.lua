@@ -1,4 +1,6 @@
 local Enemies = require('enemies')
+local Upgrades = require('upgrades')
+
 local Game = {}
 
 function Game:new()
@@ -15,7 +17,9 @@ function Game:load()
             radius = 20,
             speed = 200,
             color = {1, 0, 0},  -- Red
-            bullets = {}
+            bullets = {},
+            doubleShot = false,
+            piercingShot = false
         }
     }
     self.localPlayerIndex = 1
@@ -25,8 +29,10 @@ function Game:load()
     self.gameState = 'countdown'
     self.countdown = 3
     self.countdownTimer = 1
-    self.gameTimer = 60  -- 1 minute game time
-    self.gameOver = false
+    self.waveTimer = 60  -- 1 minute per wave
+    self.waveNumber = 1
+    self.upgrades = Upgrades
+    self.selectedUpgrade = 1
 end
 
 function Game:addPlayer(x, y)
@@ -50,10 +56,12 @@ function Game:update(dt)
                 self.gameState = 'playing'
             end
         end
-    elseif self.gameState == 'playing' and not self.gameOver then
-        self.gameTimer = self.gameTimer - dt
-        if self.gameTimer <= 0 then
-            self.gameOver = true
+    elseif self.gameState == 'playing' then
+        self.waveTimer = self.waveTimer - dt
+        if self.waveTimer <= 0 then
+            self.gameState = 'upgrade'
+            self.waveNumber = self.waveNumber + 1
+            self.waveTimer = 60
         end
 
         -- Update player movement
@@ -116,7 +124,9 @@ function Game:update(dt)
                 for j = #self.enemies.list, 1, -1 do
                     local enemy = self.enemies.list[j]
                     if self:checkCollision(bullet, enemy) then
-                        table.remove(player.bullets, i)
+                        if not player.piercingShot then
+                            table.remove(player.bullets, i)
+                        end
                         table.remove(self.enemies.list, j)
                         break
                     end
@@ -148,21 +158,30 @@ end
 function Game:shoot(x, y)
     local player = self.players[self.localPlayerIndex]
     local angle = math.atan2(y - player.y, x - player.x)
-    local bullet = {
-        x = player.x,
-        y = player.y,
-        dx = math.cos(angle) * self.bulletSpeed,
-        dy = math.sin(angle) * self.bulletSpeed
-    }
-    table.insert(player.bullets, bullet)
+    local createBullet = function(angle)
+        return {
+            x = player.x,
+            y = player.y,
+            dx = math.cos(angle) * self.bulletSpeed,
+            dy = math.sin(angle) * self.bulletSpeed
+        }
+    end
+
+    if player.doubleShot then
+        local spread = math.pi / 36  -- 5 degree spread
+        table.insert(player.bullets, createBullet(angle - spread))
+        table.insert(player.bullets, createBullet(angle + spread))
+    else
+        table.insert(player.bullets, createBullet(angle))
+    end
 
     -- Send bullet data to other players
     local bulletData = {
         playerIndex = self.localPlayerIndex,
-        x = bullet.x,
-        y = bullet.y,
-        dx = bullet.dx,
-        dy = bullet.dy
+        x = player.x,
+        y = player.y,
+        angle = angle,
+        doubleShot = player.doubleShot
     }
     if _G.server then
         _G.server:sendToAll('shoot', bulletData)
@@ -173,13 +192,23 @@ end
 
 function Game:addBullet(data)
     if data.playerIndex ~= self.localPlayerIndex then
-        local bullet = {
-            x = data.x,
-            y = data.y,
-            dx = data.dx,
-            dy = data.dy
-        }
-        table.insert(self.players[data.playerIndex].bullets, bullet)
+        local player = self.players[data.playerIndex]
+        local createBullet = function(angle)
+            return {
+                x = data.x,
+                y = data.y,
+                dx = math.cos(angle) * self.bulletSpeed,
+                dy = math.sin(angle) * self.bulletSpeed
+            }
+        end
+
+        if data.doubleShot then
+            local spread = math.pi / 36  -- 5 degree spread
+            table.insert(player.bullets, createBullet(data.angle - spread))
+            table.insert(player.bullets, createBullet(data.angle + spread))
+        else
+            table.insert(player.bullets, createBullet(data.angle))
+        end
     end
 end
 
@@ -188,7 +217,7 @@ function Game:draw()
         love.graphics.setColor(1, 1, 1)
         local text = self.countdown > 0 and tostring(self.countdown) or "GO!"
         love.graphics.printf(text, 0, love.graphics.getHeight() / 2 - 40, love.graphics.getWidth(), "center")
-    elseif self.gameState == 'playing' or self.gameOver then
+    elseif self.gameState == 'playing' then
         if not self.players then return end  -- Safety check
         for i, player in ipairs(self.players) do
             love.graphics.setColor(unpack(player.color))
@@ -206,14 +235,53 @@ function Game:draw()
         -- Draw enemies
         self.enemies:draw()
         
-        -- Draw timer
+        -- Draw timer and wave number
         love.graphics.setColor(1, 1, 1)
-        love.graphics.printf(string.format("Time: %.0f", self.gameTimer), 0, 10, love.graphics.getWidth(), "center")
-        
-        if self.gameOver then
-            love.graphics.setColor(1, 0, 0)
-            love.graphics.printf("Game Over!", 0, love.graphics.getHeight() / 2 - 40, love.graphics.getWidth(), "center")
+        love.graphics.printf(string.format("Wave: %d", self.waveNumber), 10, 10, 200, "left")
+        love.graphics.printf(string.format("Time: %.0f", self.waveTimer), 0, 10, love.graphics.getWidth(), "center")
+    elseif self.gameState == 'upgrade' then
+        love.graphics.setColor(1, 1, 1)
+        love.graphics.printf("Choose an Upgrade", 0, 50, love.graphics.getWidth(), "center")
+        self.upgrades:draw(self.selectedUpgrade)
+    end
+end
+
+function Game:keypressed(key)
+    if self.gameState == 'upgrade' then
+        if key == 'left' then
+            self.selectedUpgrade = math.max(1, self.selectedUpgrade - 1)
+        elseif key == 'right' then
+            self.selectedUpgrade = math.min(3, self.selectedUpgrade + 1)
+        elseif key == 'return' then
+            self:selectUpgrade(self.selectedUpgrade)
         end
+    end
+end
+
+function Game:mousepressed(x, y, button)
+    if self.gameState == 'upgrade' and button == 1 then
+        local cardWidth, cardHeight = 200, 300
+        local spacing = 50
+        local totalWidth = cardWidth * 3 + spacing * 2
+        local startX = (love.graphics.getWidth() - totalWidth) / 2
+        local startY = (love.graphics.getHeight() - cardHeight) / 2
+
+        for i = 1, 3 do
+            local cardX = startX + (i-1) * (cardWidth + spacing)
+            local cardY = startY
+            if x >= cardX and x <= cardX + cardWidth and y >= cardY and y <= cardY + cardHeight then
+                self:selectUpgrade(i)
+                break
+            end
+        end
+    end
+end
+
+function Game:selectUpgrade(index)
+    if self.upgrades:selectUpgrade(index, self.players[self.localPlayerIndex]) then
+        self.gameState = 'countdown'
+        self.countdown = 3
+        self.countdownTimer = 1
     end
 end
 

@@ -85,11 +85,13 @@ function love.mousepressed(x, y, button, istouch, presses)
             gameState = 'joining'
             joinCode = ''  -- Reset join code when entering join mode
         end
-    elseif (gameState == 'playing' or gameState == 'hosting' or gameState == 'joined') and button == 1 then
-        game:shoot(x, y)
+    elseif gameState == 'playing' or gameState == 'hosting' or gameState == 'joined' then
+        if button == 1 then
+            game:shoot(x, y)
+        end
+        game:mousepressed(x, y, button)
     end
 end
-
 function love.keypressed(key)
     if key == 'escape' and (gameState == 'playing' or gameState == 'hosting' or gameState == 'joined') then
         gameState = 'menu'
