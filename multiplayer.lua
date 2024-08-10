@@ -17,12 +17,23 @@ function Multiplayer.hostGame(game, setStatusMessage)
         print("Received join request with code: " .. tostring(data.code))
         setStatusMessage("Received join request with code: " .. tostring(data.code), 2)
         if tonumber(data.code) == hostCode then
-            client:send('joined', {x = game.players[2].x, y = game.players[2].y})
+            local x = love.math.random(50, 750)  -- Random x position
+            local y = love.math.random(50, 550)  -- Random y position
+            game:addPlayer(x, y)
+            client:send('joined', {x = x, y = y})
+            server:sendToAll('playerJoined', {x = x, y = y})
             setStatusMessage("Player joined the game!", 2)
             print("Player joined as player 2")
         else
             client:send('wrongCode')
             setStatusMessage("Wrong code received: " .. tostring(data.code), 2)
+        end
+    end)
+
+    server:on('playerJoined', function(data)
+        if #game.players == 1 then  -- If we don't have the second player yet
+            game:addPlayer(data.x, data.y)
+            print("Added second player at", data.x, data.y)
         end
     end)
     
@@ -54,12 +65,18 @@ function Multiplayer.joinGame(game, setStatusMessage, code)
     end)
     
     client:on('joined', function(data)
-        game:load()
+        game:load()  -- This now only loads the first player
+        game:addPlayer(data.x, data.y)  -- Add the second player (self)
         game.localPlayerIndex = 2  -- Set the local player as the second player
-        game.players[2].x = data.x
-        game.players[2].y = data.y
         setStatusMessage("Joined game successfully!", 2)
         print("Joined game as player 2, initial position:", data.x, data.y)
+    end)
+    
+    client:on('playerJoined', function(data)
+        if #game.players == 1 then  -- If we don't have the second player yet
+            game:addPlayer(data.x, data.y)
+            print("Added second player at", data.x, data.y)
+        end
     end)
     
     client:on('update', function(data)

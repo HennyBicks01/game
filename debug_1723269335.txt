@@ -1,0 +1,1372 @@
+Neither server nor client is defined
+Local player moved from	200	300	to	201.82476	300
+Neither server nor client is defined
+Local player moved from	201.82476	300	to	203.31878	300
+Neither server nor client is defined
+Local player moved from	203.31878	300	to	204.97956	300
+Neither server nor client is defined
+Local player moved from	204.97956	300	to	206.79404	300
+Neither server nor client is defined
+Local player moved from	206.79404	300	to	208.4121	300
+Neither server nor client is defined
+Local player moved from	208.4121	300	to	210.0107	300
+Neither server nor client is defined
+Local player moved from	210.0107	300	to	211.63126	300
+Neither server nor client is defined
+Local player moved from	211.63126	300	to	213.44994	300
+Neither server nor client is defined
+Local player moved from	213.44994	300	to	215.06242	300
+Neither server nor client is defined
+Local player moved from	215.06242	300	to	216.77986	300
+Neither server nor client is defined
+Local player moved from	216.77986	300	to	218.41742	300
+Neither server nor client is defined
+Local player moved from	218.41742	300	to	220.0023	300
+Neither server nor client is defined
+Local player moved from	220.0023	300	to	221.60978	300
+Neither server nor client is defined
+Local player moved from	221.60978	300	to	223.4306	300
+Neither server nor client is defined
+Local player moved from	223.4306	300	to	225.02904	300
+Neither server nor client is defined
+Local player moved from	225.02904	300	to	226.67764	300
+Neither server nor client is defined
+Local player moved from	226.67764	300	to	228.37936	300
+Neither server nor client is defined
+Local player moved from	228.37936	300	to	229.98476	300
+Neither server nor client is defined
+Local player moved from	229.98476	300	to	231.62464	300
+Neither server nor client is defined
+Local player moved from	231.62464	300	to	233.43146	300
+Neither server nor client is defined
+Local player moved from	233.43146	300	to	235.01592	300
+Neither server nor client is defined
+Local player moved from	235.01592	300	to	236.64772	300
+Neither server nor client is defined
+Local player moved from	236.64772	300	to	238.45432	300
+Neither server nor client is defined
+Local player moved from	238.45432	300	to	240.10432	300
+Neither server nor client is defined
+Local player moved from	240.10432	300	to	241.6073	300
+Neither server nor client is defined
+Local player moved from	241.6073	300	to	243.45382	300
+Neither server nor client is defined
+Local player moved from	243.45382	300	to	244.98336	300
+Neither server nor client is defined
+Local player moved from	244.98336	300	to	246.68832	300
+Neither server nor client is defined
+Local player moved from	246.68832	300	to	248.4003	300
+Neither server nor client is defined
+Local player moved from	248.4003	300	to	250.00442	300
+Neither server nor client is defined
+Local player moved from	250.00442	300	to	251.63474	300
+Neither server nor client is defined
+Local player moved from	251.63474	300	to	253.44318	300
+Neither server nor client is defined
+Local player moved from	253.44318	300	to	255.04964	300
+Neither server nor client is defined
+Local player moved from	255.04964	300	to	256.65768	300
+Neither server nor client is defined
+Local player moved from	256.65768	300	to	258.26556	300
+Neither server nor client is defined
+Local player moved from	258.26556	300	to	260.0887	300
+Neither server nor client is defined
+Local player moved from	260.0887	300	to	261.79818	300
+Neither server nor client is defined
+Local player moved from	261.79818	300	to	263.4245	300
+Neither server nor client is defined
+Local player moved from	263.4245	300	to	265.02676	300
+Neither server nor client is defined
+Local player moved from	265.02676	300	to	266.782	300
+Neither server nor client is defined
+Local player moved from	266.782	300	to	268.43256	300
+Neither server nor client is defined
+Local player moved from	268.43256	300	to	269.98046	300
+Neither server nor client is defined
+Local player moved from	269.98046	300	to	271.603	300
+Neither server nor client is defined
+Local player moved from	271.603	300	to	273.47818	300
+Neither server nor client is defined
+Local player moved from	273.47818	300	to	275.01988	300
+Neither server nor client is defined
+Local player moved from	275.01988	300	to	276.72282	300
+Neither server nor client is defined
+Local player moved from	276.72282	300	to	278.43052	300
+Neither server nor client is defined
+Local player moved from	278.43052	300	to	280.0907	300
+Neither server nor client is defined
+Local player moved from	280.0907	300	to	281.62496	300
+Neither server nor client is defined
+Local player moved from	281.62496	300	to	283.29098	300
+Neither server nor client is defined
+Local player moved from	283.29098	300	to	284.9878	300
+Neither server nor client is defined
+Local player moved from	284.9878	300	to	286.68454	300
+Neither server nor client is defined
+Local player moved from	286.68454	300	to	288.39044	300
+Neither server nor client is defined
+Local player moved from	288.39044	300	to	289.99406	300
+Neither server nor client is defined
+Local player moved from	289.99406	300	to	291.79634	300
+Neither server nor client is defined
+Local player moved from	291.79634	300	to	293.42654	300
+Neither server nor client is defined
+Local player moved from	293.42654	300	to	295.00556	300
+Neither server nor client is defined
+Local player moved from	295.00556	300	to	296.63568	300
+Neither server nor client is defined
+Local player moved from	296.63568	300	to	298.27462	300
+Neither server nor client is defined
+Local player moved from	298.27462	300	to	299.97766	300
+Neither server nor client is defined
+Local player moved from	299.97766	300	to	301.77842	300
+Neither server nor client is defined
+Local player moved from	301.77842	300	to	303.38246	300
+Neither server nor client is defined
+Local player moved from	303.38246	300	to	305.05478	300
+Neither server nor client is defined
+Local player moved from	305.05478	300	to	306.70112	300
+Neither server nor client is defined
+Local player moved from	306.70112	300	to	308.44072	300
+Neither server nor client is defined
+Local player moved from	308.44072	300	to	310.08474	300
+Neither server nor client is defined
+Local player moved from	310.08474	300	to	311.7668	300
+Neither server nor client is defined
+Local player moved from	311.7668	300	to	313.3786	300
+Neither server nor client is defined
+Local player moved from	313.3786	300	to	315.08348	300
+Neither server nor client is defined
+Local player moved from	315.08348	300	to	316.67812	300
+Neither server nor client is defined
+Local player moved from	316.67812	300	to	318.49054	300
+Neither server nor client is defined
+Local player moved from	318.49054	300	to	320.06602	300
+Neither server nor client is defined
+Local player moved from	320.06602	300	to	321.61476	300
+Neither server nor client is defined
+Local player moved from	321.61476	300	to	323.58372	300
+Neither server nor client is defined
+Local player moved from	323.58372	300	to	325.0391	300
+Neither server nor client is defined
+Local player moved from	325.0391	300	to	326.60482	300
+Neither server nor client is defined
+Local player moved from	326.60482	300	to	328.4296	300
+Neither server nor client is defined
+Local player moved from	328.4296	300	to	330.0119	300
+Neither server nor client is defined
+Local player moved from	330.0119	300	to	331.6587	300
+Neither server nor client is defined
+Local player moved from	331.6587	300	to	333.44348	300
+Neither server nor client is defined
+Local player moved from	333.44348	300	to	335.04998	300
+Neither server nor client is defined
+Local player moved from	335.04998	300	to	336.70484	300
+Neither server nor client is defined
+Local player moved from	336.70484	300	to	338.38312	300
+Neither server nor client is defined
+Local player moved from	338.38312	300	to	340.0371	300
+Neither server nor client is defined
+Local player moved from	340.0371	300	to	341.81038	300
+Neither server nor client is defined
+Local player moved from	341.81038	300	to	343.41804	300
+Neither server nor client is defined
+Local player moved from	343.41804	300	to	345.00112	300
+Neither server nor client is defined
+Local player moved from	345.00112	300	to	346.70544	300
+Neither server nor client is defined
+Local player moved from	346.70544	300	to	348.52016	300
+Neither server nor client is defined
+Local player moved from	348.52016	300	to	350.111	300
+Neither server nor client is defined
+Local player moved from	350.111	300	to	351.79952	300
+Neither server nor client is defined
+Local player moved from	351.79952	300	to	353.45364	300
+Neither server nor client is defined
+Local player moved from	353.45364	300	to	355.14542	300
+Neither server nor client is defined
+Local player moved from	355.14542	300	to	356.70632	300
+Neither server nor client is defined
+Local player moved from	356.70632	300	to	358.39244	300
+Neither server nor client is defined
+Local player moved from	358.39244	300	to	360.09404	300
+Neither server nor client is defined
+Local player moved from	360.09404	300	to	361.74608	300
+Neither server nor client is defined
+Local player moved from	361.74608	300	to	363.4786	300
+Neither server nor client is defined
+Local player moved from	363.4786	300	to	365.00082	300
+Neither server nor client is defined
+Local player moved from	365.00082	300	to	366.68996	300
+Neither server nor client is defined
+Local player moved from	366.68996	300	to	368.39298	300
+Neither server nor client is defined
+Local player moved from	368.39298	300	to	370.1166	300
+Neither server nor client is defined
+Local player moved from	370.1166	300	to	371.75848	300
+Neither server nor client is defined
+Local player moved from	371.75848	300	to	373.31202	300
+Neither server nor client is defined
+Local player moved from	373.31202	300	to	374.99782	300
+Neither server nor client is defined
+Local player moved from	374.99782	300	to	376.85652	300
+Neither server nor client is defined
+Local player moved from	376.85652	300	to	378.43256	300
+Neither server nor client is defined
+Local player moved from	378.43256	300	to	380.07874	300
+Neither server nor client is defined
+Local player moved from	380.07874	300	to	381.68104	300
+Neither server nor client is defined
+Local player moved from	381.68104	300	to	383.43306	300
+Neither server nor client is defined
+Local player moved from	383.43306	300	to	385.10342	300
+Neither server nor client is defined
+Local player moved from	385.10342	300	to	386.67728	300
+Neither server nor client is defined
+Local player moved from	386.67728	300	to	388.38834	300
+Neither server nor client is defined
+Local player moved from	388.38834	300	to	390.1436	300
+Neither server nor client is defined
+Local player moved from	390.1436	300	to	391.65928	300
+Neither server nor client is defined
+Local player moved from	391.65928	300	to	393.40348	300
+Neither server nor client is defined
+Local player moved from	393.40348	300	to	395.10786	300
+Neither server nor client is defined
+Local player moved from	395.10786	300	to	396.72626	300
+Neither server nor client is defined
+Local player moved from	396.72626	300	to	398.40436	300
+Neither server nor client is defined
+Local player moved from	398.40436	300	to	400.06206	300
+Neither server nor client is defined
+Local player moved from	400.06206	300	to	401.833	300
+Neither server nor client is defined
+Local player moved from	401.833	300	to	403.28472	300
+Neither server nor client is defined
+Local player moved from	403.28472	300	to	405.07256	300
+Neither server nor client is defined
+Local player moved from	405.07256	300	to	406.60046	300
+Neither server nor client is defined
+Local player moved from	406.60046	300	to	408.50518	300
+Neither server nor client is defined
+Local player moved from	408.50518	300	to	410.0787	300
+Neither server nor client is defined
+Local player moved from	410.0787	300	to	411.65236	300
+Neither server nor client is defined
+Local player moved from	411.65236	300	to	413.66176	300
+Neither server nor client is defined
+Local player moved from	413.66176	300	to	415.028	300
+Neither server nor client is defined
+Local player moved from	415.028	300	to	416.60078	300
+Neither server nor client is defined
+Local player moved from	416.60078	300	to	418.42434	300
+Neither server nor client is defined
+Local player moved from	418.42434	300	to	420.03356	300
+Neither server nor client is defined
+Local player moved from	420.03356	300	to	421.77068	300
+Neither server nor client is defined
+Local player moved from	421.77068	300	to	423.33206	300
+Neither server nor client is defined
+Local player moved from	423.33206	300	to	425.08544	300
+Neither server nor client is defined
+Local player moved from	425.08544	300	to	426.77072	300
+Neither server nor client is defined
+Local player moved from	426.77072	300	to	428.42838	300
+Neither server nor client is defined
+Local player moved from	428.42838	300	to	430.18598	300
+Neither server nor client is defined
+Local player moved from	430.18598	300	to	431.7066	298.47938
+Neither server nor client is defined
+Local player moved from	431.7066	298.47938	to	433.43126	296.75472
+Neither server nor client is defined
+Local player moved from	433.43126	296.75472	to	435.00404	295.18194
+Neither server nor client is defined
+Local player moved from	435.00404	295.18194	to	436.59706	293.58892
+Neither server nor client is defined
+Local player moved from	436.59706	293.58892	to	438.28364	291.90234
+Neither server nor client is defined
+Local player moved from	438.28364	291.90234	to	439.9848	290.20118
+Neither server nor client is defined
+Local player moved from	439.9848	290.20118	to	441.69188	288.4941
+Neither server nor client is defined
+Local player moved from	441.69188	288.4941	to	441.69188	286.72696
+Neither server nor client is defined
+Local player moved from	441.69188	286.72696	to	441.69188	285.14308
+Neither server nor client is defined
+Local player moved from	441.69188	285.14308	to	441.69188	283.47532
+Neither server nor client is defined
+Local player moved from	441.69188	283.47532	to	441.69188	281.74754
+Neither server nor client is defined
+Local player moved from	441.69188	281.74754	to	441.69188	280.13528
+Neither server nor client is defined
+Local player moved from	441.69188	280.13528	to	441.69188	278.42994
+Neither server nor client is defined
+Local player moved from	441.69188	278.42994	to	441.69188	276.7817
+Neither server nor client is defined
+Local player moved from	441.69188	276.7817	to	441.69188	275.17854
+Neither server nor client is defined
+Local player moved from	441.69188	275.17854	to	441.69188	273.58114
+Neither server nor client is defined
+Local player moved from	441.69188	273.58114	to	441.69188	271.7628
+Neither server nor client is defined
+Local player moved from	441.69188	271.7628	to	441.69188	270.11938
+Neither server nor client is defined
+Local player moved from	441.69188	270.11938	to	441.69188	268.42524
+Neither server nor client is defined
+Local player moved from	441.69188	268.42524	to	441.69188	266.91838
+Neither server nor client is defined
+Local player moved from	441.69188	266.91838	to	441.69188	265.09382
+Neither server nor client is defined
+Local player moved from	441.69188	265.09382	to	441.69188	263.51286
+Neither server nor client is defined
+Local player moved from	441.69188	263.51286	to	441.69188	261.90418
+Neither server nor client is defined
+Local player moved from	441.69188	261.90418	to	441.69188	260.09728
+Neither server nor client is defined
+Local player moved from	441.69188	260.09728	to	441.69188	258.48324
+Neither server nor client is defined
+Local player moved from	441.69188	258.48324	to	441.69188	256.76682
+Neither server nor client is defined
+Local player moved from	441.69188	256.76682	to	441.69188	255.1804
+Neither server nor client is defined
+Local player moved from	441.69188	255.1804	to	441.69188	253.47446
+Neither server nor client is defined
+Local player moved from	441.69188	253.47446	to	441.69188	251.77278
+Neither server nor client is defined
+Local player moved from	441.69188	251.77278	to	441.69188	250.0846
+Neither server nor client is defined
+Local player moved from	441.69188	250.0846	to	441.69188	248.535
+Neither server nor client is defined
+Local player moved from	441.69188	248.535	to	441.69188	246.78092
+Neither server nor client is defined
+Local player moved from	441.69188	246.78092	to	441.69188	245.18362
+Neither server nor client is defined
+Local player moved from	441.69188	245.18362	to	441.69188	243.43246
+Neither server nor client is defined
+Local player moved from	441.69188	243.43246	to	441.69188	241.73386
+Neither server nor client is defined
+Local player moved from	441.69188	241.73386	to	441.69188	240.26188
+Neither server nor client is defined
+Local player moved from	441.69188	240.26188	to	441.69188	238.55638
+Neither server nor client is defined
+Local player moved from	441.69188	238.55638	to	441.69188	236.7495
+Neither server nor client is defined
+Local player moved from	441.69188	236.7495	to	441.69188	235.14872
+Neither server nor client is defined
+Local player moved from	441.69188	235.14872	to	441.69188	233.4349
+Neither server nor client is defined
+Local player moved from	441.69188	233.4349	to	441.69188	231.92112
+Neither server nor client is defined
+Local player moved from	441.69188	231.92112	to	441.69188	230.23044
+Neither server nor client is defined
+Local player moved from	441.69188	230.23044	to	441.69188	228.52296
+Neither server nor client is defined
+Local player moved from	441.69188	228.52296	to	441.69188	226.82032
+Neither server nor client is defined
+Local player moved from	441.69188	226.82032	to	441.69188	225.10874
+Neither server nor client is defined
+Local player moved from	441.69188	225.10874	to	441.69188	223.59436
+Neither server nor client is defined
+Local player moved from	441.69188	223.59436	to	441.69188	221.89664
+Neither server nor client is defined
+Local player moved from	441.69188	221.89664	to	441.69188	220.09016
+Neither server nor client is defined
+Local player moved from	441.69188	220.09016	to	441.69188	218.4816
+Neither server nor client is defined
+Local player moved from	441.69188	218.4816	to	439.8411	216.63082
+Neither server nor client is defined
+Local player moved from	439.8411	216.63082	to	438.2327	215.02242
+Neither server nor client is defined
+Local player moved from	438.2327	215.02242	to	436.78452	213.57424
+Neither server nor client is defined
+Local player moved from	436.78452	213.57424	to	435.08016	211.86988
+Neither server nor client is defined
+Local player moved from	435.08016	211.86988	to	433.44012	210.22984
+Neither server nor client is defined
+Local player moved from	433.44012	210.22984	to	431.73242	208.52214
+Neither server nor client is defined
+Local player moved from	431.73242	208.52214	to	430.08798	206.8777
+Neither server nor client is defined
+Local player moved from	430.08798	206.8777	to	428.3865	205.17622
+Neither server nor client is defined
+Local player moved from	428.3865	205.17622	to	426.6864	203.47612
+Neither server nor client is defined
+Local player moved from	426.6864	203.47612	to	424.97648	201.7662
+Neither server nor client is defined
+Local player moved from	424.97648	201.7662	to	423.26998	200.0597
+Neither server nor client is defined
+Local player moved from	423.26998	200.0597	to	421.65868	200.0597
+Neither server nor client is defined
+Local player moved from	421.65868	200.0597	to	419.94264	200.0597
+Neither server nor client is defined
+Local player moved from	419.94264	200.0597	to	418.35816	200.0597
+Neither server nor client is defined
+Local player moved from	418.35816	200.0597	to	416.65498	200.0597
+Neither server nor client is defined
+Local player moved from	416.65498	200.0597	to	414.9423	200.0597
+Neither server nor client is defined
+Local player moved from	414.9423	200.0597	to	413.33168	200.0597
+Neither server nor client is defined
+Local player moved from	413.33168	200.0597	to	411.62962	200.0597
+Neither server nor client is defined
+Local player moved from	411.62962	200.0597	to	410.12972	200.0597
+Neither server nor client is defined
+Local player moved from	410.12972	200.0597	to	408.32536	200.0597
+Neither server nor client is defined
+Local player moved from	408.32536	200.0597	to	406.67822	200.0597
+Neither server nor client is defined
+Local player moved from	406.67822	200.0597	to	404.97664	200.0597
+Neither server nor client is defined
+Local player moved from	404.97664	200.0597	to	403.47126	200.0597
+Neither server nor client is defined
+Local player moved from	403.47126	200.0597	to	401.67112	200.0597
+Neither server nor client is defined
+Local player moved from	401.67112	200.0597	to	400.12352	200.0597
+Neither server nor client is defined
+Local player moved from	400.12352	200.0597	to	398.32266	200.0597
+Neither server nor client is defined
+Local player moved from	398.32266	200.0597	to	396.7062	200.0597
+Neither server nor client is defined
+Local player moved from	396.7062	200.0597	to	395.09812	200.0597
+Neither server nor client is defined
+Local player moved from	395.09812	200.0597	to	393.33162	200.0597
+Neither server nor client is defined
+Local player moved from	393.33162	200.0597	to	391.725	200.0597
+Neither server nor client is defined
+Local player moved from	391.725	200.0597	to	389.9794	200.0597
+Neither server nor client is defined
+Local player moved from	389.9794	200.0597	to	388.38134	200.0597
+Neither server nor client is defined
+Local player moved from	388.38134	200.0597	to	386.68022	200.0597
+Neither server nor client is defined
+Local player moved from	386.68022	200.0597	to	384.97782	200.0597
+Neither server nor client is defined
+Local player moved from	384.97782	200.0597	to	383.46482	200.0597
+Neither server nor client is defined
+Local player moved from	383.46482	200.0597	to	381.75502	200.0597
+Neither server nor client is defined
+Local player moved from	381.75502	200.0597	to	379.9575	200.0597
+Neither server nor client is defined
+Local player moved from	379.9575	200.0597	to	378.36214	200.0597
+Neither server nor client is defined
+Local player moved from	378.36214	200.0597	to	376.72682	200.0597
+Neither server nor client is defined
+Local player moved from	376.72682	200.0597	to	375.04396	200.0597
+Neither server nor client is defined
+Local player moved from	375.04396	200.0597	to	373.42428	200.0597
+Neither server nor client is defined
+Local player moved from	373.42428	200.0597	to	371.72212	200.0597
+Neither server nor client is defined
+Local player moved from	371.72212	200.0597	to	370.06418	200.0597
+Neither server nor client is defined
+Local player moved from	370.06418	200.0597	to	368.36468	200.0597
+Neither server nor client is defined
+Local player moved from	368.36468	200.0597	to	366.76746	200.0597
+Neither server nor client is defined
+Local player moved from	366.76746	200.0597	to	364.97986	200.0597
+Neither server nor client is defined
+Local player moved from	364.97986	200.0597	to	363.3386	200.0597
+Neither server nor client is defined
+Local player moved from	363.3386	200.0597	to	361.67054	200.0597
+Neither server nor client is defined
+Local player moved from	361.67054	200.0597	to	360.1038	200.0597
+Neither server nor client is defined
+Local player moved from	360.1038	200.0597	to	358.30056	200.0597
+Neither server nor client is defined
+Local player moved from	358.30056	200.0597	to	356.79004	200.0597
+Neither server nor client is defined
+Local player moved from	356.79004	200.0597	to	354.98754	200.0597
+Neither server nor client is defined
+Local player moved from	354.98754	200.0597	to	353.28636	200.0597
+Neither server nor client is defined
+Local player moved from	353.28636	200.0597	to	351.6753	200.0597
+Neither server nor client is defined
+Local player moved from	351.6753	200.0597	to	349.97178	200.0597
+Neither server nor client is defined
+Local player moved from	349.97178	200.0597	to	348.36174	200.0597
+Neither server nor client is defined
+Local player moved from	348.36174	200.0597	to	346.76362	200.0597
+Neither server nor client is defined
+Local player moved from	346.76362	200.0597	to	345.06854	200.0597
+Neither server nor client is defined
+Local player moved from	345.06854	200.0597	to	343.36628	200.0597
+Neither server nor client is defined
+Local player moved from	343.36628	200.0597	to	341.66254	200.0597
+Neither server nor client is defined
+Local player moved from	341.66254	200.0597	to	340.14436	200.0597
+Neither server nor client is defined
+Local player moved from	340.14436	200.0597	to	338.26992	201.93414
+Neither server nor client is defined
+Local player moved from	338.26992	201.93414	to	336.60412	203.59994
+Neither server nor client is defined
+Local player moved from	336.60412	203.59994	to	335.101	205.10306
+Neither server nor client is defined
+Local player moved from	335.101	205.10306	to	333.28546	206.9186
+Neither server nor client is defined
+Local player moved from	333.28546	206.9186	to	331.77944	208.42462
+Neither server nor client is defined
+Local player moved from	331.77944	208.42462	to	329.97124	210.23282
+Neither server nor client is defined
+Local player moved from	329.97124	210.23282	to	328.37942	211.82464
+Neither server nor client is defined
+Local player moved from	328.37942	211.82464	to	326.76704	213.43702
+Neither server nor client is defined
+Local player moved from	326.76704	213.43702	to	325.06522	215.13884
+Neither server nor client is defined
+Local player moved from	325.06522	215.13884	to	323.35422	216.84984
+Neither server nor client is defined
+Local player moved from	323.35422	216.84984	to	321.7745	218.42956
+Neither server nor client is defined
+Local player moved from	321.7745	218.42956	to	320.07618	220.12788
+Neither server nor client is defined
+Local player moved from	320.07618	220.12788	to	318.37418	221.82988
+Neither server nor client is defined
+Local player moved from	318.37418	221.82988	to	316.75218	223.45188
+Neither server nor client is defined
+Local player moved from	316.75218	223.45188	to	314.96428	225.23978
+Neither server nor client is defined
+Local player moved from	314.96428	225.23978	to	313.46534	226.73872
+Neither server nor client is defined
+Local player moved from	313.46534	226.73872	to	313.46534	228.50344
+Neither server nor client is defined
+Local player moved from	313.46534	228.50344	to	313.46534	230.17246
+Neither server nor client is defined
+Local player moved from	313.46534	230.17246	to	313.46534	231.89936
+Neither server nor client is defined
+Local player moved from	313.46534	231.89936	to	313.46534	233.52506
+Neither server nor client is defined
+Local player moved from	313.46534	233.52506	to	313.46534	235.10506
+Neither server nor client is defined
+Local player moved from	313.46534	235.10506	to	313.46534	236.91244
+Neither server nor client is defined
+Local player moved from	313.46534	236.91244	to	313.46534	238.52384
+Neither server nor client is defined
+Local player moved from	313.46534	238.52384	to	313.46534	240.23228
+Neither server nor client is defined
+Local player moved from	313.46534	240.23228	to	313.46534	241.8388
+Neither server nor client is defined
+Local player moved from	313.46534	241.8388	to	313.46534	243.43804
+Neither server nor client is defined
+Local player moved from	313.46534	243.43804	to	313.46534	245.14484
+Neither server nor client is defined
+Local player moved from	313.46534	245.14484	to	313.46534	246.848
+Neither server nor client is defined
+Local player moved from	313.46534	246.848	to	313.46534	248.50254
+Neither server nor client is defined
+Local player moved from	313.46534	248.50254	to	313.46534	250.23296
+Neither server nor client is defined
+Local player moved from	313.46534	250.23296	to	313.46534	251.83032
+Neither server nor client is defined
+Local player moved from	313.46534	251.83032	to	313.46534	253.43966
+Neither server nor client is defined
+Local player moved from	313.46534	253.43966	to	313.46534	255.14192
+Neither server nor client is defined
+Local player moved from	313.46534	255.14192	to	313.46534	256.8987
+Neither server nor client is defined
+Local player moved from	313.46534	256.8987	to	313.46534	258.40504
+Neither server nor client is defined
+Local player moved from	313.46534	258.40504	to	313.46534	260.12026
+Neither server nor client is defined
+Local player moved from	313.46534	260.12026	to	313.46534	261.91324
+Neither server nor client is defined
+Local player moved from	313.46534	261.91324	to	313.46534	263.51736
+Neither server nor client is defined
+Local player moved from	313.46534	263.51736	to	313.46534	265.17584
+Neither server nor client is defined
+Local player moved from	313.46534	265.17584	to	313.46534	266.88516
+Neither server nor client is defined
+Local player moved from	313.46534	266.88516	to	313.46534	268.4947
+Neither server nor client is defined
+Local player moved from	313.46534	268.4947	to	313.46534	270.1263
+Neither server nor client is defined
+Local player moved from	313.46534	270.1263	to	313.46534	271.84044
+Neither server nor client is defined
+Local player moved from	313.46534	271.84044	to	313.46534	273.54304
+Neither server nor client is defined
+Local player moved from	313.46534	273.54304	to	313.46534	275.24126
+Neither server nor client is defined
+Local player moved from	313.46534	275.24126	to	313.46534	276.92306
+Neither server nor client is defined
+Local player moved from	313.46534	276.92306	to	313.46534	278.43656
+Neither server nor client is defined
+Local player moved from	313.46534	278.43656	to	313.46534	280.09392
+Neither server nor client is defined
+Local player moved from	313.46534	280.09392	to	313.46534	281.89876
+Neither server nor client is defined
+Local player moved from	313.46534	281.89876	to	313.46534	283.52272
+Neither server nor client is defined
+Local player moved from	313.46534	283.52272	to	313.46534	285.17396
+Neither server nor client is defined
+Local player moved from	313.46534	285.17396	to	313.46534	286.89456
+Neither server nor client is defined
+Local player moved from	313.46534	286.89456	to	313.46534	288.4869
+Neither server nor client is defined
+Local player moved from	313.46534	288.4869	to	313.46534	290.14
+Neither server nor client is defined
+Local player moved from	313.46534	290.14	to	313.46534	291.84872
+Neither server nor client is defined
+Local player moved from	313.46534	291.84872	to	313.46534	293.46288
+Neither server nor client is defined
+Local player moved from	313.46534	293.46288	to	313.46534	295.1472
+Neither server nor client is defined
+Local player moved from	313.46534	295.1472	to	313.46534	296.89954
+Neither server nor client is defined
+Local player moved from	313.46534	296.89954	to	313.46534	298.56818
+Neither server nor client is defined
+Local player moved from	313.46534	298.56818	to	313.46534	300.0784
+Neither server nor client is defined
+Local player moved from	313.46534	300.0784	to	313.46534	301.88404
+Neither server nor client is defined
+Local player moved from	313.46534	301.88404	to	313.46534	303.49026
+Neither server nor client is defined
+Local player moved from	313.46534	303.49026	to	313.46534	305.12936
+Neither server nor client is defined
+Local player moved from	313.46534	305.12936	to	313.46534	306.83604
+Neither server nor client is defined
+Local player moved from	313.46534	306.83604	to	313.46534	308.45982
+Neither server nor client is defined
+Local player moved from	313.46534	308.45982	to	313.46534	310.08372
+Neither server nor client is defined
+Local player moved from	313.46534	310.08372	to	313.46534	311.87966
+Neither server nor client is defined
+Local player moved from	313.46534	311.87966	to	313.46534	313.54404
+Neither server nor client is defined
+Local player moved from	313.46534	313.54404	to	313.46534	315.248
+Neither server nor client is defined
+Local player moved from	313.46534	315.248	to	313.46534	316.75612
+Neither server nor client is defined
+Local player moved from	313.46534	316.75612	to	313.46534	318.46288
+Neither server nor client is defined
+Local player moved from	313.46534	318.46288	to	313.46534	320.12738
+Neither server nor client is defined
+Local player moved from	313.46534	320.12738	to	313.46534	321.8494
+Neither server nor client is defined
+Local player moved from	313.46534	321.8494	to	313.46534	323.56168
+Neither server nor client is defined
+Local player moved from	313.46534	323.56168	to	313.46534	325.2361
+Neither server nor client is defined
+Local player moved from	313.46534	325.2361	to	313.46534	326.85282
+Neither server nor client is defined
+Local player moved from	313.46534	326.85282	to	313.46534	328.52344
+Neither server nor client is defined
+Local player moved from	313.46534	328.52344	to	313.46534	330.19818
+Neither server nor client is defined
+Local player moved from	313.46534	330.19818	to	313.46534	331.95464
+Neither server nor client is defined
+Local player moved from	313.46534	331.95464	to	313.46534	333.44306
+Neither server nor client is defined
+Local player moved from	313.46534	333.44306	to	313.46534	335.35532
+Neither server nor client is defined
+Local player moved from	313.46534	335.35532	to	313.46534	336.85896
+Neither server nor client is defined
+Local player moved from	313.46534	336.85896	to	313.46534	338.46718
+Neither server nor client is defined
+Local player moved from	313.46534	338.46718	to	313.46534	340.08422
+Neither server nor client is defined
+Local player moved from	313.46534	340.08422	to	313.46534	341.96302
+Neither server nor client is defined
+Local player moved from	313.46534	341.96302	to	313.46534	343.5086
+Neither server nor client is defined
+Local player moved from	313.46534	343.5086	to	313.46534	345.2498
+Neither server nor client is defined
+Local player moved from	313.46534	345.2498	to	313.46534	346.84174
+Neither server nor client is defined
+Local player moved from	313.46534	346.84174	to	313.46534	348.5299
+Neither server nor client is defined
+Local player moved from	313.46534	348.5299	to	313.46534	350.1315
+Neither server nor client is defined
+Local player moved from	313.46534	350.1315	to	313.46534	351.89362
+Neither server nor client is defined
+Local player moved from	313.46534	351.89362	to	313.46534	353.49178
+Neither server nor client is defined
+Local player moved from	313.46534	353.49178	to	313.46534	355.1962
+Neither server nor client is defined
+Local player moved from	313.46534	355.1962	to	313.46534	356.96608
+Neither server nor client is defined
+Local player moved from	313.46534	356.96608	to	313.46534	358.55046
+Neither server nor client is defined
+Local player moved from	313.46534	358.55046	to	313.46534	360.15864
+Neither server nor client is defined
+Local player moved from	313.46534	360.15864	to	313.46534	361.84332
+Neither server nor client is defined
+Local player moved from	313.46534	361.84332	to	313.46534	363.629
+Neither server nor client is defined
+Local player moved from	313.46534	363.629	to	315.17874	365.3424
+Neither server nor client is defined
+Local player moved from	315.17874	365.3424	to	316.59964	366.7633
+Neither server nor client is defined
+Local player moved from	316.59964	366.7633	to	318.3111	368.47476
+Neither server nor client is defined
+Local player moved from	318.3111	368.47476	to	320.00954	370.1732
+Neither server nor client is defined
+Local player moved from	320.00954	370.1732	to	321.70974	371.8734
+Neither server nor client is defined
+Local player moved from	321.70974	371.8734	to	323.31006	373.47372
+Neither server nor client is defined
+Local player moved from	323.31006	373.47372	to	324.9217	375.08536
+Neither server nor client is defined
+Local player moved from	324.9217	375.08536	to	326.7271	376.89076
+Neither server nor client is defined
+Local player moved from	326.7271	376.89076	to	328.38768	378.55134
+Neither server nor client is defined
+Local player moved from	328.38768	378.55134	to	330.095	380.25866
+Neither server nor client is defined
+Local player moved from	330.095	380.25866	to	331.76822	381.93188
+Neither server nor client is defined
+Local player moved from	331.76822	381.93188	to	333.38008	383.54374
+Neither server nor client is defined
+Local player moved from	333.38008	383.54374	to	335.09732	383.54374
+Neither server nor client is defined
+Local player moved from	335.09732	383.54374	to	336.75424	383.54374
+Neither server nor client is defined
+Local player moved from	336.75424	383.54374	to	338.39562	383.54374
+Neither server nor client is defined
+Local player moved from	338.39562	383.54374	to	340.09768	383.54374
+Neither server nor client is defined
+Local player moved from	340.09768	383.54374	to	341.69928	383.54374
+Neither server nor client is defined
+Local player moved from	341.69928	383.54374	to	343.37124	383.54374
+Neither server nor client is defined
+Local player moved from	343.37124	383.54374	to	344.97848	383.54374
+Neither server nor client is defined
+Local player moved from	344.97848	383.54374	to	346.68284	383.54374
+Neither server nor client is defined
+Local player moved from	346.68284	383.54374	to	348.38686	383.54374
+Neither server nor client is defined
+Local player moved from	348.38686	383.54374	to	349.97604	383.54374
+Neither server nor client is defined
+Local player moved from	349.97604	383.54374	to	351.57296	383.54374
+Neither server nor client is defined
+Local player moved from	351.57296	383.54374	to	353.39926	383.54374
+Neither server nor client is defined
+Local player moved from	353.39926	383.54374	to	355.06816	383.54374
+Neither server nor client is defined
+Local player moved from	355.06816	383.54374	to	356.5757	383.54374
+Neither server nor client is defined
+Local player moved from	356.5757	383.54374	to	358.28362	383.54374
+Neither server nor client is defined
+Local player moved from	358.28362	383.54374	to	360.09072	383.54374
+Neither server nor client is defined
+Local player moved from	360.09072	383.54374	to	361.68564	383.54374
+Neither server nor client is defined
+Local player moved from	361.68564	383.54374	to	363.28364	383.54374
+Neither server nor client is defined
+Local player moved from	363.28364	383.54374	to	364.89962	383.54374
+Neither server nor client is defined
+Local player moved from	364.89962	383.54374	to	366.69522	383.54374
+Neither server nor client is defined
+Local player moved from	366.69522	383.54374	to	368.3212	383.54374
+Neither server nor client is defined
+Local player moved from	368.3212	383.54374	to	369.9219	383.54374
+Neither server nor client is defined
+Local player moved from	369.9219	383.54374	to	371.72336	383.54374
+Neither server nor client is defined
+Local player moved from	371.72336	383.54374	to	373.22278	383.54374
+Neither server nor client is defined
+Local player moved from	373.22278	383.54374	to	374.93504	383.54374
+Neither server nor client is defined
+Local player moved from	374.93504	383.54374	to	376.74976	383.54374
+Neither server nor client is defined
+Local player moved from	376.74976	383.54374	to	378.2599	383.54374
+Neither server nor client is defined
+Local player moved from	378.2599	383.54374	to	379.9616	383.54374
+Neither server nor client is defined
+Local player moved from	379.9616	383.54374	to	381.68692	383.54374
+Neither server nor client is defined
+Local player moved from	381.68692	383.54374	to	383.36024	383.54374
+Neither server nor client is defined
+Local player moved from	383.36024	383.54374	to	385.06518	383.54374
+Neither server nor client is defined
+Local player moved from	385.06518	383.54374	to	386.56844	383.54374
+Neither server nor client is defined
+Local player moved from	386.56844	383.54374	to	388.39208	383.54374
+Neither server nor client is defined
+Local player moved from	388.39208	383.54374	to	389.98708	381.94874
+Neither server nor client is defined
+Local player moved from	389.98708	381.94874	to	391.74316	380.19266
+Neither server nor client is defined
+Local player moved from	391.74316	380.19266	to	393.32582	378.61
+Neither server nor client is defined
+Local player moved from	393.32582	378.61	to	393.32582	376.91354
+Neither server nor client is defined
+Local player moved from	393.32582	376.91354	to	393.32582	375.2911
+Neither server nor client is defined
+Local player moved from	393.32582	375.2911	to	393.32582	373.6031
+Neither server nor client is defined
+Local player moved from	393.32582	373.6031	to	393.32582	371.91926
+Neither server nor client is defined
+Local player moved from	393.32582	371.91926	to	393.32582	370.19544
+Neither server nor client is defined
+Local player moved from	393.32582	370.19544	to	393.32582	368.68792
+Neither server nor client is defined
+Local player moved from	393.32582	368.68792	to	393.32582	366.98398
+Neither server nor client is defined
+Local player moved from	393.32582	366.98398	to	393.32582	365.30276
+Neither server nor client is defined
+Local player moved from	393.32582	365.30276	to	393.32582	363.7055
+Neither server nor client is defined
+Local player moved from	393.32582	363.7055	to	393.32582	361.89492
+Neither server nor client is defined
+Local player moved from	393.32582	361.89492	to	393.32582	360.19782
+Neither server nor client is defined
+Local player moved from	393.32582	360.19782	to	393.32582	358.69688
+Neither server nor client is defined
+Local player moved from	393.32582	358.69688	to	393.32582	356.98536
+Neither server nor client is defined
+Local player moved from	393.32582	356.98536	to	393.32582	355.27366
+Neither server nor client is defined
+Local player moved from	393.32582	355.27366	to	393.32582	353.56962
+Neither server nor client is defined
+Local player moved from	393.32582	353.56962	to	393.32582	351.95072
+Neither server nor client is defined
+Local player moved from	393.32582	351.95072	to	393.32582	350.21776
+Neither server nor client is defined
+Local player moved from	393.32582	350.21776	to	393.32582	348.64734
+Neither server nor client is defined
+Local player moved from	393.32582	348.64734	to	393.32582	347.03872
+Neither server nor client is defined
+Local player moved from	393.32582	347.03872	to	393.32582	345.2066
+Neither server nor client is defined
+Local player moved from	393.32582	345.2066	to	393.32582	343.59558
+Neither server nor client is defined
+Local player moved from	393.32582	343.59558	to	393.32582	341.96594
+Neither server nor client is defined
+Local player moved from	393.32582	341.96594	to	393.32582	340.36678
+Neither server nor client is defined
+Local player moved from	393.32582	340.36678	to	393.32582	338.55324
+Neither server nor client is defined
+Local player moved from	393.32582	338.55324	to	393.32582	336.92234
+Neither server nor client is defined
+Local player moved from	393.32582	336.92234	to	393.32582	335.22122
+Neither server nor client is defined
+Local player moved from	393.32582	335.22122	to	391.55948	333.45488
+Neither server nor client is defined
+Local player moved from	391.55948	333.45488	to	390.09648	331.99188
+Neither server nor client is defined
+Local player moved from	390.09648	331.99188	to	388.30802	330.20342
+Neither server nor client is defined
+Local player moved from	388.30802	330.20342	to	386.71716	328.61256
+Neither server nor client is defined
+Local player moved from	386.71716	328.61256	to	385.04102	326.93642
+Neither server nor client is defined
+Local player moved from	385.04102	326.93642	to	383.3326	325.228
+Neither server nor client is defined
+Local player moved from	383.3326	325.228	to	381.63784	323.53324
+Neither server nor client is defined
+Local player moved from	381.63784	323.53324	to	380.10732	322.00272
+Neither server nor client is defined
+Local player moved from	380.10732	322.00272	to	378.29938	320.19478
+Neither server nor client is defined
+Local player moved from	378.29938	320.19478	to	376.59824	318.49364
+Neither server nor client is defined
+Local player moved from	376.59824	318.49364	to	375.09454	316.98994
+Neither server nor client is defined
+Local player moved from	375.09454	316.98994	to	373.22706	316.98994
+Neither server nor client is defined
+Local player moved from	373.22706	316.98994	to	371.72926	316.98994
+Neither server nor client is defined
+Local player moved from	371.72926	316.98994	to	370.10386	316.98994
+Neither server nor client is defined
+Local player moved from	370.10386	316.98994	to	368.33544	316.98994
+Neither server nor client is defined
+Local player moved from	368.33544	316.98994	to	366.63402	316.98994
+Neither server nor client is defined
+Local player moved from	366.63402	316.98994	to	365.11056	316.98994
+Neither server nor client is defined
+Local player moved from	365.11056	316.98994	to	363.33534	316.98994
+Neither server nor client is defined
+Local player moved from	363.33534	316.98994	to	361.63024	316.98994
+Neither server nor client is defined
+Local player moved from	361.63024	316.98994	to	360.10484	316.98994
+Neither server nor client is defined
+Local player moved from	360.10484	316.98994	to	358.30346	316.98994
+Neither server nor client is defined
+Local player moved from	358.30346	316.98994	to	356.8014	316.98994
+Neither server nor client is defined
+Local player moved from	356.8014	316.98994	to	354.92542	316.98994
+Neither server nor client is defined
+Local player moved from	354.92542	316.98994	to	353.4242	316.98994
+Neither server nor client is defined
+Local player moved from	353.4242	316.98994	to	351.7342	316.98994
+Neither server nor client is defined
+Local player moved from	351.7342	316.98994	to	350.05388	316.98994
+Neither server nor client is defined
+Local player moved from	350.05388	316.98994	to	348.34488	316.98994
+Neither server nor client is defined
+Local player moved from	348.34488	316.98994	to	346.74156	316.98994
+Neither server nor client is defined
+Local player moved from	346.74156	316.98994	to	345.1033	316.98994
+Neither server nor client is defined
+Local player moved from	345.1033	316.98994	to	343.30336	316.98994
+Neither server nor client is defined
+Local player moved from	343.30336	316.98994	to	341.64248	316.98994
+Neither server nor client is defined
+Local player moved from	341.64248	316.98994	to	340.12206	316.98994
+Neither server nor client is defined
+Local player moved from	340.12206	316.98994	to	338.3118	316.98994
+Neither server nor client is defined
+Local player moved from	338.3118	316.98994	to	336.73736	316.98994
+Neither server nor client is defined
+Local player moved from	336.73736	316.98994	to	335.11932	316.98994
+Neither server nor client is defined
+Local player moved from	335.11932	316.98994	to	333.40794	316.98994
+Neither server nor client is defined
+Local player moved from	333.40794	316.98994	to	331.73872	316.98994
+Neither server nor client is defined
+Local player moved from	331.73872	316.98994	to	330.03392	316.98994
+Neither server nor client is defined
+Local player moved from	330.03392	316.98994	to	328.33084	316.98994
+Neither server nor client is defined
+Local player moved from	328.33084	316.98994	to	326.7289	316.98994
+Neither server nor client is defined
+Local player moved from	326.7289	316.98994	to	324.97474	316.98994
+Neither server nor client is defined
+Local player moved from	324.97474	316.98994	to	323.36384	316.98994
+Neither server nor client is defined
+Local player moved from	323.36384	316.98994	to	323.36384	315.14606
+Neither server nor client is defined
+Local player moved from	323.36384	315.14606	to	323.36384	313.51306
+Neither server nor client is defined
+Local player moved from	323.36384	313.51306	to	323.36384	311.87676
+Neither server nor client is defined
+Local player moved from	323.36384	311.87676	to	323.36384	310.25956
+Neither server nor client is defined
+Local player moved from	323.36384	310.25956	to	323.36384	308.64578
+Neither server nor client is defined
+Local player moved from	323.36384	308.64578	to	323.36384	306.9765
+Neither server nor client is defined
+Local player moved from	323.36384	306.9765	to	323.36384	305.27688
+Neither server nor client is defined
+Local player moved from	323.36384	305.27688	to	323.36384	303.57432
+Neither server nor client is defined
+Local player moved from	323.36384	303.57432	to	324.83222	303.57432
+Neither server nor client is defined
+Local player moved from	324.83222	303.57432	to	326.48542	303.57432
+Neither server nor client is defined
+Local player moved from	326.48542	303.57432	to	328.11202	303.57432
+Neither server nor client is defined
+Local player moved from	328.11202	303.57432	to	329.77824	303.57432
+Neither server nor client is defined
+Local player moved from	329.77824	303.57432	to	331.48254	303.57432
+Neither server nor client is defined
+Local player moved from	331.48254	303.57432	to	333.36546	303.57432
+Neither server nor client is defined
+Local player moved from	333.36546	303.57432	to	334.76772	303.57432
+Neither server nor client is defined
+Local player moved from	334.76772	303.57432	to	336.46868	303.57432
+Neither server nor client is defined
+Local player moved from	336.46868	303.57432	to	338.11016	303.57432
+Neither server nor client is defined
+Local player moved from	338.11016	303.57432	to	339.95244	303.57432
+Neither server nor client is defined
+Local player moved from	339.95244	303.57432	to	341.57614	303.57432
+Neither server nor client is defined
+Local player moved from	341.57614	303.57432	to	343.27222	303.57432
+Neither server nor client is defined
+Local player moved from	343.27222	303.57432	to	344.88106	303.57432
+Neither server nor client is defined
+Local player moved from	344.88106	303.57432	to	346.57992	303.57432
+Neither server nor client is defined
+Local player moved from	346.57992	303.57432	to	348.28148	303.57432
+Neither server nor client is defined
+Local player moved from	348.28148	303.57432	to	349.7866	303.57432
+Neither server nor client is defined
+Local player moved from	349.7866	303.57432	to	351.49592	303.57432
+Neither server nor client is defined
+Local player moved from	351.49592	303.57432	to	353.09448	303.57432
+Neither server nor client is defined
+Local player moved from	353.09448	303.57432	to	354.8198	303.57432
+Neither server nor client is defined
+Local player moved from	354.8198	303.57432	to	356.5232	303.57432
+Neither server nor client is defined
+Local player moved from	356.5232	303.57432	to	358.12804	303.57432
+Neither server nor client is defined
+Local player moved from	358.12804	303.57432	to	359.79002	303.57432
+Neither server nor client is defined
+Local player moved from	359.79002	303.57432	to	361.4994	303.57432
+Neither server nor client is defined
+Local player moved from	361.4994	303.57432	to	363.10348	303.57432
+Neither server nor client is defined
+Local player moved from	363.10348	303.57432	to	364.9664	303.57432
+Neither server nor client is defined
+Local player moved from	364.9664	303.57432	to	366.60034	303.57432
+Neither server nor client is defined
+Local player moved from	366.60034	303.57432	to	368.10768	303.57432
+Neither server nor client is defined
+Local player moved from	368.10768	303.57432	to	369.92372	303.57432
+Neither server nor client is defined
+Local player moved from	369.92372	303.57432	to	371.42484	303.57432
+Neither server nor client is defined
+Local player moved from	371.42484	303.57432	to	373.13162	303.57432
+Neither server nor client is defined
+Local player moved from	373.13162	303.57432	to	374.7756	303.57432
+Neither server nor client is defined
+Local player moved from	374.7756	303.57432	to	376.48896	303.57432
+Neither server nor client is defined
+Local player moved from	376.48896	303.57432	to	378.09534	303.57432
+Neither server nor client is defined
+Local player moved from	378.09534	303.57432	to	379.91238	303.57432
+Neither server nor client is defined
+Local player moved from	379.91238	303.57432	to	381.54016	303.57432
+Neither server nor client is defined
+Local player moved from	381.54016	303.57432	to	383.14564	303.57432
+Neither server nor client is defined
+Local player moved from	383.14564	303.57432	to	384.81478	303.57432
+Neither server nor client is defined
+Local player moved from	384.81478	303.57432	to	386.63434	303.57432
+Neither server nor client is defined
+Local player moved from	386.63434	303.57432	to	388.1202	303.57432
+Neither server nor client is defined
+Local player moved from	388.1202	303.57432	to	389.78836	303.57432
+Neither server nor client is defined
+Local player moved from	389.78836	303.57432	to	389.78836	301.89664
+Neither server nor client is defined
+Local player moved from	389.78836	301.89664	to	389.78836	300.12374
+Neither server nor client is defined
+Local player moved from	389.78836	300.12374	to	389.78836	298.55636
+Neither server nor client is defined
+Local player moved from	389.78836	298.55636	to	389.78836	296.88366
+Neither server nor client is defined
+Local player moved from	389.78836	296.88366	to	389.78836	295.2691
+Neither server nor client is defined
+Local player moved from	389.78836	295.2691	to	389.78836	293.65062
+Neither server nor client is defined
+Local player moved from	389.78836	293.65062	to	389.78836	291.74704
+Neither server nor client is defined
+Local player moved from	389.78836	291.74704	to	389.78836	290.15068
+Neither server nor client is defined
+Local player moved from	389.78836	290.15068	to	389.78836	288.5419
+Neither server nor client is defined
+Local player moved from	389.78836	288.5419	to	389.78836	286.92952
+Neither server nor client is defined
+Local player moved from	389.78836	286.92952	to	389.78836	285.31502
+Neither server nor client is defined
+Local player moved from	389.78836	285.31502	to	389.78836	283.49444
+Neither server nor client is defined
+Local player moved from	389.78836	283.49444	to	389.78836	281.91608
+Neither server nor client is defined
+Local player moved from	389.78836	281.91608	to	389.78836	280.20032
+Neither server nor client is defined
+Local player moved from	389.78836	280.20032	to	389.78836	278.5028
+Neither server nor client is defined
+Local player moved from	389.78836	278.5028	to	389.78836	276.9952
+Neither server nor client is defined
+Local player moved from	389.78836	276.9952	to	389.78836	275.28984
+Neither server nor client is defined
+Local player moved from	389.78836	275.28984	to	389.78836	273.46674
+Neither server nor client is defined
+Local player moved from	389.78836	273.46674	to	389.78836	271.76464
+Neither server nor client is defined
+Local player moved from	389.78836	271.76464	to	389.78836	270.1623
+Neither server nor client is defined
+Local player moved from	389.78836	270.1623	to	389.78836	268.56874
+Neither server nor client is defined
+Local player moved from	389.78836	268.56874	to	389.78836	266.96738
+Neither server nor client is defined
+Local player moved from	389.78836	266.96738	to	389.78836	265.2652
+Neither server nor client is defined
+Local player moved from	389.78836	265.2652	to	389.78836	263.56182
+Neither server nor client is defined
+Local player moved from	389.78836	263.56182	to	389.78836	261.96304
+Neither server nor client is defined
+Local player moved from	389.78836	261.96304	to	389.78836	260.16644
+Neither server nor client is defined
+Local player moved from	389.78836	260.16644	to	389.78836	258.6634
+Neither server nor client is defined
+Local player moved from	389.78836	258.6634	to	389.78836	256.85478
+Neither server nor client is defined
+Local player moved from	389.78836	256.85478	to	389.78836	255.17134
+Neither server nor client is defined
+Local player moved from	389.78836	255.17134	to	389.78836	253.67098
+Neither server nor client is defined
+Local player moved from	389.78836	253.67098	to	389.78836	251.76704
+Neither server nor client is defined
+Local player moved from	389.78836	251.76704	to	389.78836	250.16732
+Neither server nor client is defined
+Local player moved from	389.78836	250.16732	to	389.78836	248.52798
+Neither server nor client is defined
+Local player moved from	389.78836	248.52798	to	389.78836	246.83988
+Neither server nor client is defined
+Local player moved from	389.78836	246.83988	to	389.78836	245.32976
+Neither server nor client is defined
+Local player moved from	389.78836	245.32976	to	389.78836	243.62382
+Neither server nor client is defined
+Local player moved from	389.78836	243.62382	to	389.78836	241.7213
+Neither server nor client is defined
+Local player moved from	389.78836	241.7213	to	389.78836	240.3217
+Neither server nor client is defined
+Local player moved from	389.78836	240.3217	to	389.78836	238.5687
+Neither server nor client is defined
+Local player moved from	389.78836	238.5687	to	389.78836	236.95808
+Neither server nor client is defined
+Local player moved from	389.78836	236.95808	to	389.78836	235.25582
+Neither server nor client is defined
+Local player moved from	389.78836	235.25582	to	389.78836	233.64434
+Neither server nor client is defined
+Local player moved from	389.78836	233.64434	to	389.78836	231.96916
+Neither server nor client is defined
+Local player moved from	389.78836	231.96916	to	389.78836	230.3144
+Neither server nor client is defined
+Local player moved from	389.78836	230.3144	to	389.78836	228.50372
+Neither server nor client is defined
+Local player moved from	389.78836	228.50372	to	389.78836	226.90112
+Neither server nor client is defined
+Local player moved from	389.78836	226.90112	to	389.78836	225.19206
+Neither server nor client is defined
+Local player moved from	389.78836	225.19206	to	389.78836	223.47028
+Neither server nor client is defined
+Local player moved from	389.78836	223.47028	to	389.78836	221.73594
+Neither server nor client is defined
+Local player moved from	389.78836	221.73594	to	389.78836	220.15982
+Neither server nor client is defined
+Local player moved from	389.78836	220.15982	to	389.78836	218.65388
+Neither server nor client is defined
+Local player moved from	389.78836	218.65388	to	389.78836	216.8381
+Neither server nor client is defined
+Local player moved from	389.78836	216.8381	to	389.78836	215.15468
+Neither server nor client is defined
+Local player moved from	389.78836	215.15468	to	389.78836	213.6605
+Neither server nor client is defined
+Local player moved from	389.78836	213.6605	to	389.78836	211.7519
+Neither server nor client is defined
+Local player moved from	389.78836	211.7519	to	389.78836	210.1543
+Neither server nor client is defined
+Local player moved from	389.78836	210.1543	to	388.09962	208.46556
+Neither server nor client is defined
+Local player moved from	388.09962	208.46556	to	386.44006	206.806
+Neither server nor client is defined
+Local player moved from	386.44006	206.806	to	384.77044	205.13638
+Neither server nor client is defined
+Local player moved from	384.77044	205.13638	to	383.13852	203.50446
+Neither server nor client is defined
+Local player moved from	383.13852	203.50446	to	381.56652	201.93246
+Neither server nor client is defined
+Local player moved from	381.56652	201.93246	to	379.91032	200.27626
+Neither server nor client is defined
+Local player moved from	379.91032	200.27626	to	378.29706	198.663
+Neither server nor client is defined
+Local player moved from	378.29706	198.663	to	376.47356	196.8395
+Neither server nor client is defined
+Local player moved from	376.47356	196.8395	to	374.8903	195.25624
+Neither server nor client is defined
+Local player moved from	374.8903	195.25624	to	373.26792	193.63386
+Neither server nor client is defined
+Local player moved from	373.26792	193.63386	to	371.37506	191.741
+Neither server nor client is defined
+Local player moved from	371.37506	191.741	to	369.97904	190.34498
+Neither server nor client is defined
+Local player moved from	369.97904	190.34498	to	368.14578	188.51172
+Neither server nor client is defined
+Local player moved from	368.14578	188.51172	to	366.43656	186.8025
+Neither server nor client is defined
+Local player moved from	366.43656	186.8025	to	364.93288	185.29882
+Neither server nor client is defined
+Local player moved from	364.93288	185.29882	to	363.10548	183.47142
+Neither server nor client is defined
+Local player moved from	363.10548	183.47142	to	361.37228	181.73822
+Neither server nor client is defined
+Local player moved from	361.37228	181.73822	to	359.77054	180.13648
+Neither server nor client is defined
+Local player moved from	359.77054	180.13648	to	358.15286	178.5188
+Neither server nor client is defined
+Local player moved from	358.15286	178.5188	to	356.46202	176.82796
+Neither server nor client is defined
+Local player moved from	356.46202	176.82796	to	354.96326	175.3292
+Neither server nor client is defined
+Local player moved from	354.96326	175.3292	to	353.27286	173.6388
+Neither server nor client is defined
+Local player moved from	353.27286	173.6388	to	351.22786	173.6388
+Neither server nor client is defined
+Local player moved from	351.22786	173.6388	to	349.94176	173.6388
+Neither server nor client is defined
+Local player moved from	349.94176	173.6388	to	348.27636	173.6388
+Neither server nor client is defined
+Local player moved from	348.27636	173.6388	to	346.56916	173.6388
+Neither server nor client is defined
+Local player moved from	346.56916	173.6388	to	344.8899	173.6388
+Neither server nor client is defined
+Local player moved from	344.8899	173.6388	to	343.189	173.6388
+Neither server nor client is defined
+Local player moved from	343.189	173.6388	to	341.58572	173.6388
+Neither server nor client is defined
+Local player moved from	341.58572	173.6388	to	339.89714	173.6388
+Neither server nor client is defined
+Local player moved from	339.89714	173.6388	to	338.0959	173.6388
+Neither server nor client is defined
+Local player moved from	338.0959	173.6388	to	336.47482	173.6388
+Neither server nor client is defined
+Local player moved from	336.47482	173.6388	to	334.9709	173.6388
+Neither server nor client is defined
+Local player moved from	334.9709	173.6388	to	333.2852	173.6388
+Neither server nor client is defined
+Local player moved from	333.2852	173.6388	to	331.38078	173.6388
+Neither server nor client is defined
+Local player moved from	331.38078	173.6388	to	329.7819	173.6388
+Neither server nor client is defined
+Local player moved from	329.7819	173.6388	to	328.2862	173.6388
+Neither server nor client is defined
+Local player moved from	328.2862	173.6388	to	326.54462	173.6388
+Neither server nor client is defined
+Local player moved from	326.54462	173.6388	to	324.8532	173.6388
+Neither server nor client is defined
+Local player moved from	324.8532	173.6388	to	323.11628	173.6388
+Neither server nor client is defined
+Local player moved from	323.11628	173.6388	to	321.5487	173.6388
+Neither server nor client is defined
+Local player moved from	321.5487	173.6388	to	319.88636	173.6388
+Neither server nor client is defined
+Local player moved from	319.88636	173.6388	to	318.18186	173.6388
+Neither server nor client is defined
+Local player moved from	318.18186	173.6388	to	318.18186	175.33124
+Neither server nor client is defined
+Local player moved from	318.18186	175.33124	to	318.18186	177.05912
+Neither server nor client is defined
+Local player moved from	318.18186	177.05912	to	318.18186	178.5294
+Neither server nor client is defined
+Local player moved from	318.18186	178.5294	to	318.18186	180.23838
+Neither server nor client is defined
+Local player moved from	318.18186	180.23838	to	318.18186	181.85724
+Neither server nor client is defined
+Local player moved from	318.18186	181.85724	to	318.18186	183.57702
+Neither server nor client is defined
+Local player moved from	318.18186	183.57702	to	318.18186	185.2943
+Neither server nor client is defined
+Local player moved from	318.18186	185.2943	to	318.18186	186.83024
+Neither server nor client is defined
+Local player moved from	318.18186	186.83024	to	318.18186	188.52908
+Neither server nor client is defined
+Local player moved from	318.18186	188.52908	to	318.18186	190.23364
+Neither server nor client is defined
+Local player moved from	318.18186	190.23364	to	318.18186	191.84684
+Neither server nor client is defined
+Local player moved from	318.18186	191.84684	to	318.18186	193.68908
+Neither server nor client is defined
+Local player moved from	318.18186	193.68908	to	318.18186	195.27326
+Neither server nor client is defined
+Local player moved from	318.18186	195.27326	to	318.18186	196.9259
+Neither server nor client is defined
+Local player moved from	318.18186	196.9259	to	318.18186	198.62822
+Neither server nor client is defined
+Local player moved from	318.18186	198.62822	to	318.18186	200.33348
+Neither server nor client is defined
+Local player moved from	318.18186	200.33348	to	318.18186	201.85204
+Neither server nor client is defined
+Local player moved from	318.18186	201.85204	to	318.18186	203.55612
+Neither server nor client is defined
+Local player moved from	318.18186	203.55612	to	318.18186	205.2327
+Neither server nor client is defined
+Local player moved from	318.18186	205.2327	to	318.18186	206.93002
+Neither server nor client is defined
+Local player moved from	318.18186	206.93002	to	318.18186	208.6343
+Neither server nor client is defined
+Local player moved from	318.18186	208.6343	to	318.18186	210.34074
+Neither server nor client is defined
+Local player moved from	318.18186	210.34074	to	318.18186	211.83986
+Neither server nor client is defined
+Local player moved from	318.18186	211.83986	to	318.18186	213.6635
+Neither server nor client is defined
+Local player moved from	318.18186	213.6635	to	318.18186	215.27076
+Neither server nor client is defined
+Local player moved from	318.18186	215.27076	to	318.18186	216.9834
+Neither server nor client is defined
+Local player moved from	318.18186	216.9834	to	318.18186	218.588
+Neither server nor client is defined
+Local player moved from	318.18186	218.588	to	318.18186	220.28786
+Neither server nor client is defined
+Local player moved from	318.18186	220.28786	to	318.18186	221.90254
+Neither server nor client is defined
+Local player moved from	318.18186	221.90254	to	318.18186	223.5405
+Neither server nor client is defined
+Local player moved from	318.18186	223.5405	to	318.18186	225.46008
+Neither server nor client is defined
+Local player moved from	318.18186	225.46008	to	318.18186	226.84048
+Neither server nor client is defined
+Local player moved from	318.18186	226.84048	to	318.18186	228.5321
+Neither server nor client is defined
+Local player moved from	318.18186	228.5321	to	318.18186	230.23964
+Neither server nor client is defined
+Local player moved from	318.18186	230.23964	to	318.18186	231.9452
+Neither server nor client is defined
+Local player moved from	318.18186	231.9452	to	318.18186	233.65372
+Neither server nor client is defined
+Local player moved from	318.18186	233.65372	to	318.18186	235.26152
+Neither server nor client is defined
+Local player moved from	318.18186	235.26152	to	318.18186	236.9341
+Neither server nor client is defined
+Local player moved from	318.18186	236.9341	to	318.18186	238.64148
+Neither server nor client is defined
+Local player moved from	318.18186	238.64148	to	318.18186	240.24202
+Neither server nor client is defined
+Local player moved from	318.18186	240.24202	to	318.18186	241.93814
+Neither server nor client is defined
+Local player moved from	318.18186	241.93814	to	318.18186	243.58704
+Neither server nor client is defined
+Local player moved from	318.18186	243.58704	to	318.18186	245.47944
+Neither server nor client is defined
+Local player moved from	318.18186	245.47944	to	318.18186	246.88034
+Neither server nor client is defined
+Local player moved from	318.18186	246.88034	to	318.18186	248.5007
+Neither server nor client is defined
+Local player moved from	318.18186	248.5007	to	318.18186	250.20946
+Neither server nor client is defined
+Local player moved from	318.18186	250.20946	to	318.18186	251.93018
+Neither server nor client is defined
+Local player moved from	318.18186	251.93018	to	318.18186	253.6166
+Neither server nor client is defined
+Local player moved from	318.18186	253.6166	to	318.18186	255.2244
+Neither server nor client is defined
+Local player moved from	318.18186	255.2244	to	318.18186	256.92816
+Neither server nor client is defined
+Local player moved from	318.18186	256.92816	to	318.18186	258.62026
+Neither server nor client is defined
+Local player moved from	318.18186	258.62026	to	318.18186	260.33556
+Neither server nor client is defined
+Local player moved from	318.18186	260.33556	to	318.18186	262.02632
+Neither server nor client is defined
+Local player moved from	318.18186	262.02632	to	318.18186	263.52486
+Neither server nor client is defined
+Local player moved from	318.18186	263.52486	to	318.18186	265.24096
+Neither server nor client is defined
+Local player moved from	318.18186	265.24096	to	318.18186	266.94556
+Neither server nor client is defined
+Local player moved from	318.18186	266.94556	to	318.18186	268.64404
+Neither server nor client is defined
+Local player moved from	318.18186	268.64404	to	318.18186	270.24428
+Neither server nor client is defined
+Local player moved from	318.18186	270.24428	to	318.18186	271.95612
+Neither server nor client is defined
+Local player moved from	318.18186	271.95612	to	318.18186	273.67398
+Neither server nor client is defined
+Local player moved from	318.18186	273.67398	to	318.18186	275.32292
+Neither server nor client is defined
+Local player moved from	318.18186	275.32292	to	318.18186	276.94202
+Neither server nor client is defined
+Local player moved from	318.18186	276.94202	to	318.18186	278.68322
+Neither server nor client is defined
+Local player moved from	318.18186	278.68322	to	318.18186	280.33492
+Neither server nor client is defined
+Local player moved from	318.18186	280.33492	to	318.18186	281.94388
+Neither server nor client is defined
+Local player moved from	318.18186	281.94388	to	318.18186	283.54242
+Neither server nor client is defined
+Local player moved from	318.18186	283.54242	to	318.18186	285.33022
+Neither server nor client is defined
+Local player moved from	318.18186	285.33022	to	318.18186	286.9143
+Neither server nor client is defined
+Local player moved from	318.18186	286.9143	to	318.18186	288.68232
+Neither server nor client is defined
+Local player moved from	318.18186	288.68232	to	318.18186	290.24538
+Neither server nor client is defined
+Local player moved from	318.18186	290.24538	to	318.18186	291.98356
+Neither server nor client is defined
+Local player moved from	318.18186	291.98356	to	318.18186	293.71416
+Neither server nor client is defined
+Local player moved from	318.18186	293.71416	to	318.18186	295.24532
+Neither server nor client is defined
+Local player moved from	318.18186	295.24532	to	318.18186	297.0207
+Neither server nor client is defined
+Local player moved from	318.18186	297.0207	to	318.18186	298.67288
+Neither server nor client is defined
+Local player moved from	318.18186	298.67288	to	318.18186	300.33648
+Neither server nor client is defined
+Local player moved from	318.18186	300.33648	to	318.18186	301.94664

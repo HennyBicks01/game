@@ -14,16 +14,19 @@ function Game:load()
             radius = 20,
             speed = 200,
             color = {1, 0, 0}  -- Red
-        },
-        {
-            x = 600,
-            y = 300,
-            radius = 20,
-            speed = 200,
-            color = {0, 0, 1}  -- Blue
         }
     }
     self.localPlayerIndex = 1
+end
+
+function Game:addPlayer(x, y)
+    table.insert(self.players, {
+        x = x,
+        y = y,
+        radius = 20,
+        speed = 200,
+        color = {0, 0, 1}  -- Blue
+    })
 end
 
 function Game:update(dt)
@@ -104,7 +107,9 @@ function Game:draw()
     -- Draw player positions for debugging
     love.graphics.setColor(1, 1, 1)
     love.graphics.print("P1: " .. math.floor(self.players[1].x) .. ", " .. math.floor(self.players[1].y), 10, 10)
-    love.graphics.print("P2: " .. math.floor(self.players[2].x) .. ", " .. math.floor(self.players[2].y), 10, 30)
+    if self.players[2] then
+        love.graphics.print("P2: " .. math.floor(self.players[2].x) .. ", " .. math.floor(self.players[2].y), 10, 30)
+    end
 end
 
 return Game
