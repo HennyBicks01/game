@@ -1,3 +1,0 @@
-Joined game as player 2
-te trigger: 'connect' but it does not exist.
-Player joined as player 2

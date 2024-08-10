@@ -39,9 +39,11 @@ function love.update(dt)
     if gameState == 'playing' then
         game:update(dt)
     elseif gameState == 'hosting' then
+        print("Updating server")
         server:update()
         game:update(dt)
     elseif gameState == 'joined' then
+        print("Updating client")
         client:update()
         game:update(dt)
     end
@@ -55,8 +57,14 @@ function love.update(dt)
     end
 
     -- Make sure to update client/server even when not in 'hosting' or 'joined' state
-    if client then client:update() end
-    if server then server:update() end
+    if client then 
+        print("Updating client (always)")
+        client:update() 
+    end
+    if server then 
+        print("Updating server (always)")
+        server:update() 
+    end
 end
 
 
@@ -119,9 +127,12 @@ function love.keypressed(key)
         gameState = 'menu'
         if client then client:disconnect() end
         if server then server:destroy() end
+        _G.client = nil
+        _G.server = nil
     elseif gameState == 'joining' then
         if key == 'return' then
             client = Multiplayer.joinGame(game, setStatusMessage, joinCode)
+            _G.client = client  -- Set the global client variable
             gameState = 'joined'
         elseif key == 'backspace' then
             joinCode = joinCode:sub(1, -2)
@@ -133,6 +144,7 @@ end
 
 function hostGame()
     server, hostCode = Multiplayer.hostGame(game, setStatusMessage)
+    _G.server = server  -- Set the global server variable
     gameState = 'hosting'
 end
 

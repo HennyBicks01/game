@@ -232,7 +232,6 @@ end
 local Server = {}
 local Server_mt = {__index = Server}
 
---- Check for network events and handle them.
 function Server:update()
     local event = self.host:service(self.messageTimeout)
 
@@ -243,14 +242,14 @@ function Server:update()
             table.insert(self.peers, event.peer)
             table.insert(self.clients, eventClient)
             self:_activateTriggers("connect", event.data, eventClient)
-            self:log(event.type, tostring(event.peer) .. " connected")
+            self:log("info", "Client connected: " .. tostring(event.peer))
 
         elseif event.type == "receive" then
             local eventName, data = self:__unpack(event.data)
             local eventClient = self:getClient(event.peer)
 
             self:_activateTriggers(eventName, data, eventClient)
-            self:log(eventName, data)
+            self:log("debug", "Received event: " .. eventName .. ", data: " .. tostring(data))
 
         elseif event.type == "disconnect" then
             -- remove from the active peer list
@@ -266,13 +265,15 @@ function Server:update()
                 end
             end
             self:_activateTriggers("disconnect", event.data, eventClient)
-            self:log(event.type, tostring(event.peer) .. " disconnected")
+            self:log("info", "Client disconnected: " .. tostring(event.peer))
 
         end
 
         event = self.host:service(self.messageTimeout)
     end
 end
+
+
 
 -- Creates the unserialized message that will be used in callbacks
 -- In: serialized message (string)
@@ -726,16 +727,16 @@ function Client:update()
     while event do
         if event.type == "connect" then
             self:_activateTriggers("connect", event.data)
-            self:log(event.type, "Connected to " .. tostring(self.connection))
+            self:log("info", "Connected to server: " .. tostring(self.connection))
         elseif event.type == "receive" then
             local eventName, data = self:__unpack(event.data)
 
             self:_activateTriggers(eventName, data)
-            self:log(eventName, data)
+            self:log("debug", "Received event: " .. eventName .. ", data: " .. tostring(data))
 
         elseif event.type == "disconnect" then
             self:_activateTriggers("disconnect", event.data)
-            self:log(event.type, "Disconnected from " .. tostring(self.connection))
+            self:log("info", "Disconnected from server: " .. tostring(self.connection))
         end
 
         event = self.host:service(self.messageTimeout)
@@ -826,13 +827,27 @@ end
 -- @tparam string event The event to trigger with this message.
 -- @param data The data to send.
 function Client:send(event, data)
+    if not self.connection then
+        self:log("error", "Tried to send message, but client is not connected to a server")
+        return false
+    end
+
     local serializedMessage = self:__pack(event, data)
 
-    self.connection:send(serializedMessage, self.sendChannel, self.sendMode)
+    local success, err = pcall(function()
+        self.connection:send(serializedMessage, self.sendChannel, self.sendMode)
+    end)
 
-    self.packetsSent = self.packetsSent + 1
+    if success then
+        self.packetsSent = self.packetsSent + 1
+        self:log("debug", string.format("Sent message: event=%s, data=%s", event, tostring(data)))
+    else
+        self:log("error", string.format("Failed to send message: event=%s, data=%s, error=%s", event, tostring(data), tostring(err)))
+    end
 
     self:resetSendSettings()
+
+    return success
 end
 
 --- Add a callback to an event.

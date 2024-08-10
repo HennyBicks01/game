@@ -14,10 +14,10 @@ function Multiplayer.hostGame(game, setStatusMessage)
     end)
 
     server:on('join', function(data, client)
+        print("Received join request with code: " .. tostring(data.code))
         setStatusMessage("Received join request with code: " .. tostring(data.code), 2)
         if tonumber(data.code) == hostCode then
-            game:load()
-            client:send('joined', {x = game.players[1].x, y = game.players[1].y})
+            client:send('joined', {x = game.players[2].x, y = game.players[2].y})
             setStatusMessage("Player joined the game!", 2)
             print("Player joined as player 2")
         else
@@ -29,10 +29,11 @@ function Multiplayer.hostGame(game, setStatusMessage)
     server:on('update', function(data, client)
         print("Server received update:", data.index, data.x, data.y)
         game:updateOtherPlayer(data)
-        server:sendToAll('update', data)
+        server:sendToAllBut(client, 'update', data)  -- Send to all clients except the sender
     end)
     
     server:on('error', function(msg)
+        print("Server error: " .. tostring(msg))
         setStatusMessage("Server error: " .. tostring(msg), 5)
     end)
 
@@ -55,10 +56,10 @@ function Multiplayer.joinGame(game, setStatusMessage, code)
     client:on('joined', function(data)
         game:load()
         game.localPlayerIndex = 2  -- Set the local player as the second player
-        game.players[1].x = data.x
-        game.players[1].y = data.y
+        game.players[2].x = data.x
+        game.players[2].y = data.y
         setStatusMessage("Joined game successfully!", 2)
-        print("Joined game as player 2")
+        print("Joined game as player 2, initial position:", data.x, data.y)
     end)
     
     client:on('update', function(data)
@@ -67,15 +68,18 @@ function Multiplayer.joinGame(game, setStatusMessage, code)
     end)
 
     client:on('disconnect', function()
+        print("Disconnected from server")
         setStatusMessage("Disconnected from server", 3)
     end)
 
     client:on('wrongCode', function()
+        print("Wrong join code entered")
         setStatusMessage("Wrong join code entered", 3)
         client:disconnect()
     end)
 
     client:on('error', function(msg)
+        print("Client error: " .. tostring(msg))
         setStatusMessage("Error: " .. tostring(msg), 5)
     end)
 
