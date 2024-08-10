@@ -1,5 +1,6 @@
 local Game = require('game')
 local Multiplayer = require('multiplayer')
+local Menu = require('menu')
 
 local gameState = 'menu'
 local game = Game:new()  -- Create a new game instance
@@ -9,13 +10,12 @@ local hostCode
 local joinCode = ''
 local statusMessage = ''
 local statusTimer = 0
-local isFullscreen = false
 
 local debugFile
 
 function love.load()
     -- Open a unique debug file for each instance
-    debugFile = io.open("debug_" .. os.time() .. ".txt", "w")
+    debugFile = io.open("log\\debug_" .. os.time() .. ".log", "w")
     
     -- Redirect print function to write to the debug file
     local oldPrint = print
@@ -27,27 +27,19 @@ function love.load()
         end
     end
 
-    love.window.setMode(800, 600)
-    
-    buttons = {
-        singleplayer = {x = 300, y = 100, width = 200, height = 50, text = "Singleplayer"},
-        host = {x = 300, y = 200, width = 200, height = 50, text = "Host Game"},
-        join = {x = 300, y = 300, width = 200, height = 50, text = "Join Game"},
-        fullscreen = {x = 300, y = 400, width = 200, height = 50, text = "Fullscreen"}
-    }
+    love.window.setMode(800, 600, {resizable=true, vsync=true})
 end
 
 function love.update(dt)
-    if gameState == 'playing' then
+    if gameState == 'menu' then
+        Menu:update()
+    elseif gameState == 'playing' or gameState == 'hosting' or gameState == 'joined' then
         game:update(dt)
-    elseif gameState == 'hosting' then
-        print("Updating server")
-        server:update()
-        game:update(dt)
-    elseif gameState == 'joined' then
-        print("Updating client")
-        client:update()
-        game:update(dt)
+        if gameState == 'hosting' then
+            server:update()
+        elseif gameState == 'joined' then
+            client:update()
+        end
     end
 
     -- Update status message timer
@@ -57,39 +49,18 @@ function love.update(dt)
             statusMessage = ''
         end
     end
-
-    -- Make sure to update client/server even when not in 'hosting' or 'joined' state
-    if client then 
-        print("Updating client (always)")
-        client:update() 
-    end
-    if server then 
-        print("Updating server (always)")
-        server:update() 
-    end
-
-    -- Update button positions based on window size
-    local windowWidth, windowHeight = love.graphics.getDimensions()
-    for _, button in pairs(buttons) do
-        button.x = (windowWidth - button.width) / 2
-    end
-    buttons.singleplayer.y = windowHeight * 0.2
-    buttons.host.y = windowHeight * 0.4
-    buttons.join.y = windowHeight * 0.6
-    buttons.fullscreen.y = windowHeight * 0.8
 end
-
 
 function love.draw()
     if gameState == 'menu' then
-        drawMenu()
+        Menu:draw()
     elseif gameState == 'hosting' then
         love.graphics.printf("Host Code: " .. hostCode, 0, 50, 800, "center")
         game:draw()
     elseif gameState == 'joining' then
         love.graphics.printf("Enter Join Code:", 0, 250, 800, "center")
         love.graphics.printf(joinCode, 0, 300, 800, "center")
-    elseif gameState == 'joined' or gameState == 'playing' then
+    elseif gameState == 'playing' or gameState == 'joined' then
         game:draw()
     end
 
@@ -101,55 +72,21 @@ function love.draw()
     end
 end
 
-function setStatusMessage(message, duration)
-    statusMessage = message
-    statusTimer = duration or 3  -- Default duration of 3 seconds
-end
-
-function drawMenu()
-    love.graphics.setColor(1, 1, 1)
-    love.graphics.printf("Dot Game", 0, 50, 800, "center")
-    
-    for name, button in pairs(buttons) do
-        love.graphics.rectangle("line", button.x, button.y, button.width, button.height)
-        love.graphics.printf(button.text, button.x, button.y + 15, button.width, "center")
-        
-        -- Add indicator for fullscreen button
-        if name == "fullscreen" then
-            local status = isFullscreen and "ON" or "OFF"
-            love.graphics.printf(status, button.x, button.y + 35, button.width, "center")
-        end
-    end
-end
-
 function love.mousepressed(x, y, button, istouch, presses)
-    if gameState == 'menu' and button == 1 then
-        for name, btn in pairs(buttons) do
-            if x > btn.x and x < btn.x + btn.width and y > btn.y and y < btn.y + btn.height then
-                if name == 'singleplayer' then
-                    gameState = 'playing'
-                    game:load()
-                elseif name == 'host' then
-                    hostGame()
-                elseif name == 'join' then
-                    gameState = 'joining'
-                    joinCode = ''  -- Reset join code when entering join mode
-                elseif name == 'fullscreen' then
-                    toggleFullscreen()
-                end
-            end
+    if gameState == 'menu' then
+        local action = Menu:mousepressed(x, y, button)
+        if action == 'singleplayer' then
+            gameState = 'playing'
+            game:load()
+        elseif action == 'host' then
+            server, hostCode = Multiplayer.hostGame(game, setStatusMessage)
+            gameState = 'hosting'
+        elseif action == 'join' then
+            gameState = 'joining'
+            joinCode = ''  -- Reset join code when entering join mode
         end
     elseif (gameState == 'playing' or gameState == 'hosting' or gameState == 'joined') and button == 1 then
         game:shoot(x, y)
-    end
-end
-
-function toggleFullscreen()
-    isFullscreen = not isFullscreen
-    love.window.setFullscreen(isFullscreen)
-    
-    if not isFullscreen then
-        love.window.setMode(800, 600)  -- Reset to original window size when exiting fullscreen
     end
 end
 
@@ -158,12 +95,11 @@ function love.keypressed(key)
         gameState = 'menu'
         if client then client:disconnect() end
         if server then server:destroy() end
-        _G.client = nil
-        _G.server = nil
+        client = nil
+        server = nil
     elseif gameState == 'joining' then
         if key == 'return' then
             client = Multiplayer.joinGame(game, setStatusMessage, joinCode)
-            _G.client = client  -- Set the global client variable
             gameState = 'joined'
         elseif key == 'backspace' then
             joinCode = joinCode:sub(1, -2)
@@ -173,16 +109,15 @@ function love.keypressed(key)
     end
 end
 
-function hostGame()
-    server, hostCode = Multiplayer.hostGame(game, setStatusMessage)
-    _G.server = server  -- Set the global server variable
-    gameState = 'hosting'
-end
-
 function love.quit()
     if debugFile then
         debugFile:close()
     end
     if client then client:disconnect() end
     if server then server:destroy() end
+end
+
+function setStatusMessage(message, duration)
+    statusMessage = message
+    statusTimer = duration or 3  -- Default duration of 3 seconds
 end
