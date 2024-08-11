@@ -31,9 +31,9 @@ Upgrades.all = {
     },
     {
         name = "Rapid Fire",
-        description = "Increase fire rate",
+        description = "Increase fire rate by 20%",
         effect = function(player)
-            player.fireRate = (player.fireRate or 1) * 1.3
+            player.fireRate = player.fireRate * 1.2
         end
     },
     {

@@ -81,6 +81,12 @@ function Game:update(dt)
             end
         end
 
+        -- Handle continuous firing
+        if love.mouse.isDown(1) then  -- Left mouse button
+            local x, y = love.mouse.getPosition()
+            self:shoot(x, y)
+        end
+
         -- Send update if moved
         if moved then
             local updateData = {x = player.x, y = player.y, index = self.localPlayerIndex}

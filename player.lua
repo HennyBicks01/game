@@ -11,11 +11,12 @@ function Player:new(x, y, color, isLocal)
     player.doubleShot = false
     player.piercingShot = 0
     player.homingShot = true
-    player.fireRate = 1
+    player.fireRate = 1  -- Shots per second
+    player.fireTimer = 0  -- Timer to track when we can fire next
     player.bulletSize = 1
     player.isLocal = isLocal
     player.damage = 1
-    player.bulletSpeed = 400  -- You might want to use the game's bulletSpeed instead
+    player.bulletSpeed = 400
     return player
 end
 
@@ -44,6 +45,9 @@ function Player:update(dt, width, height, enemies)
         -- Keep the player within the screen boundaries
         self.x = math.max(self.radius, math.min(self.x, width - self.radius))
         self.y = math.max(self.radius, math.min(self.y, height - self.radius))
+
+        -- Update fire timer
+        self.fireTimer = math.max(0, self.fireTimer - dt)
 
         -- Update bullets
         for i = #self.bullets, 1, -1 do
@@ -91,29 +95,37 @@ function Player:update(dt, width, height, enemies)
 end
 
 function Player:shoot(x, y, bulletSpeed)
-    local angle = math.atan2(y - self.y, x - self.x)
-    local createBullet = function(angle)
-        return {
-            x = self.x,
-            y = self.y,
-            dx = math.cos(angle) * bulletSpeed,
-            dy = math.sin(angle) * bulletSpeed,
-            speed = bulletSpeed,
-            piercing = self.piercingShot,
-            size = 5 * self.bulletSize -- Base bullet size is 5
-        }
-    end
+    -- Check if we can fire based on the fire rate
+    if self.fireTimer <= 0 then
+        local angle = math.atan2(y - self.y, x - self.x)
+        local createBullet = function(angle)
+            return {
+                x = self.x,
+                y = self.y,
+                dx = math.cos(angle) * bulletSpeed,
+                dy = math.sin(angle) * bulletSpeed,
+                speed = bulletSpeed,
+                piercing = self.piercingShot,
+                size = 5 * self.bulletSize -- Base bullet size is 5
+            }
+        end
 
-    if self.doubleShot then
-        local spread = math.pi / 36  -- 5 degree spread
-        table.insert(self.bullets, createBullet(angle - spread))
-        table.insert(self.bullets, createBullet(angle + spread))
-    else
-        table.insert(self.bullets, createBullet(angle))
-    end
+        if self.doubleShot then
+            local spread = math.pi / 36  -- 5 degree spread
+            table.insert(self.bullets, createBullet(angle - spread))
+            table.insert(self.bullets, createBullet(angle + spread))
+        else
+            table.insert(self.bullets, createBullet(angle))
+        end
 
-    return angle
+        -- Reset the fire timer
+        self.fireTimer = 1 / self.fireRate
+
+        return angle
+    end
+    return nil
 end
+
 
 function Player:findClosestEnemy(bullet, enemies)
     local closestEnemy = nil
