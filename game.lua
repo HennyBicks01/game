@@ -182,11 +182,11 @@ function Game:draw()
         love.graphics.printf(text, 0, love.graphics.getHeight() / 2 - 40, love.graphics.getWidth(), "center")
     elseif self.gameState == 'playing' then
         if not self.players then return end  -- Safety check
-        for i, player in ipairs(self.players) do
+
+        -- Draw players and bullets
+        for _, player in ipairs(self.players) do
             love.graphics.setColor(unpack(player.color))
             love.graphics.circle('fill', player.x, player.y, player.radius)
-            love.graphics.setColor(1, 1, 1)
-            love.graphics.print(i, player.x - 5, player.y - 8)
 
             -- Draw bullets
             love.graphics.setColor(1, 1, 0)  -- Yellow bullets
@@ -202,6 +202,9 @@ function Game:draw()
         love.graphics.setColor(1, 1, 1)
         love.graphics.printf(string.format("Wave: %d", self.waveNumber), 10, 10, 200, "left")
         love.graphics.printf(string.format("Time: %.0f", self.waveTimer), 0, 10, love.graphics.getWidth(), "center")
+
+        -- Draw player stat hub
+        self:drawPlayerStatHub()
     elseif self.gameState == 'upgrade' then
         love.graphics.setColor(1, 1, 1)
         love.graphics.printf("Choose an Upgrade", 0, 50, love.graphics.getWidth(), "center")
@@ -219,6 +222,33 @@ function Game:keypressed(key)
         elseif key == 'return' then
             self:selectUpgrade(self.selectedUpgrade)
         end
+    end
+end
+
+function Game:drawPlayerStatHub()
+    local player = self.players[self.localPlayerIndex]
+    local statX = 10
+    local statY = 40
+    local lineHeight = 20
+
+    love.graphics.setColor(1, 1, 1)
+    love.graphics.printf("Player Stats:", statX, statY, 200, "left")
+    statY = statY + lineHeight
+
+    local stats = {
+        {"Damage", player.damage or 1},
+        {"Shot Speed", player.bulletSpeed or self.bulletSpeed},
+        {"Move Speed", player.speed},
+        {"Fire Rate", player.fireRate or 1},
+        {"Double Shot", player.doubleShot and "Yes" or "No"},
+        {"Piercing", player.piercingShot or 0},
+        {"Homing", player.homingShot and "Yes" or "No"},
+        {"Bullet Size", player.bulletSize or 1}
+    }
+
+    for _, stat in ipairs(stats) do
+        love.graphics.printf(stat[1] .. ": " .. tostring(stat[2]), statX, statY, 200, "left")
+        statY = statY + lineHeight
     end
 end
 

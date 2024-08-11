@@ -14,6 +14,8 @@ function Player:new(x, y, color, isLocal)
     player.fireRate = 1
     player.bulletSize = 1
     player.isLocal = isLocal
+    player.damage = 1
+    player.bulletSpeed = 400  -- You might want to use the game's bulletSpeed instead
     return player
 end
 
