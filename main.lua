@@ -92,6 +92,7 @@ function love.mousepressed(x, y, button, istouch, presses)
         game:mousepressed(x, y, button)
     end
 end
+
 function love.keypressed(key)
     if key == 'escape' and (gameState == 'playing' or gameState == 'hosting' or gameState == 'joined') then
         gameState = 'menu'
@@ -108,6 +109,48 @@ function love.keypressed(key)
         elseif #joinCode < 4 and tonumber(key) then
             joinCode = joinCode .. key
         end
+    end
+end
+
+function love.gamepadpressed(joystick, button)
+    if gameState == 'menu' then
+        if button == 'dpup' or button == 'dpdown' then
+            Menu:navigateOptions(button == 'dpup' and -1 or 1)
+        elseif button == 'a' then
+            local action = Menu:selectOption()
+            handleMenuAction(action)
+        end
+    elseif gameState == 'upgrade' then
+        if button == 'dpleft' or button == 'dpright' then
+            game:navigateUpgrades(button == 'dpleft' and -1 or 1)
+        elseif button == 'a' then
+            game:selectUpgrade()
+        end
+    end
+end
+
+function love.gamepadaxis(joystick, axis, value)
+    if gameState == 'menu' then
+        if axis == 'lefty' then
+            if value > 0.5 and Menu.selectedIndex < #Menu.buttons then
+                Menu:navigateOptions(1)
+            elseif value < -0.5 and Menu.selectedIndex > 1 then
+                Menu:navigateOptions(-1)
+            end
+        end
+    end
+end
+
+function handleMenuAction(action)
+    if action == 'singleplayer' then
+        gameState = 'playing'
+        game:load()
+    elseif action == 'host' then
+        server, hostCode = Multiplayer.hostGame(game, setStatusMessage)
+        gameState = 'hosting'
+    elseif action == 'join' then
+        gameState = 'joining'
+        joinCode = ''
     end
 end
 

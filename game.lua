@@ -82,9 +82,37 @@ function Game:update(dt)
         end
 
         -- Handle continuous firing
+        local shouldShoot = false
+        local targetX, targetY = self.players[self.localPlayerIndex].x, self.players[self.localPlayerIndex].y
+
+        -- Mouse input
         if love.mouse.isDown(1) then  -- Left mouse button
-            local x, y = love.mouse.getPosition()
-            self:shoot(x, y)
+            shouldShoot = true
+            targetX, targetY = love.mouse.getPosition()
+        end
+
+        -- Controller input
+        local joysticks = love.joystick.getJoysticks()
+        if #joysticks > 0 then
+            local joystick = joysticks[1]
+            local rightX = joystick:getAxis(3)
+            local rightY = joystick:getAxis(4)
+            
+            -- Apply deadzone and handle shooting
+            if math.abs(rightX) > 0.2 or math.abs(rightY) > 0.2 then
+                shouldShoot = true
+                targetX = self.players[self.localPlayerIndex].x + rightX * 100
+                targetY = self.players[self.localPlayerIndex].y + rightY * 100
+            end
+
+            -- Check if right trigger is pressed for shooting
+            if joystick:getAxis(5) > 0.5 then
+                shouldShoot = true
+            end
+        end
+
+        if shouldShoot then
+            self:shoot(targetX, targetY)
         end
 
         -- Send update if moved
@@ -277,12 +305,21 @@ function Game:mousepressed(x, y, button)
     end
 end
 
-function Game:selectUpgrade(index)
-    if self.upgrades:selectUpgrade(self.currentUpgrades, index, self.players[self.localPlayerIndex]) then
+function Game:navigateUpgrades(direction)
+    self.selectedUpgrade = self.selectedUpgrade + direction
+    if self.selectedUpgrade < 1 then
+        self.selectedUpgrade = #self.currentUpgrades
+    elseif self.selectedUpgrade > #self.currentUpgrades then
+        self.selectedUpgrade = 1
+    end
+end
+
+function Game:selectUpgrade()
+    if self.upgrades:selectUpgrade(self.currentUpgrades, self.selectedUpgrade, self.players[self.localPlayerIndex]) then
         self.gameState = 'countdown'
         self.countdown = 3
         self.countdownTimer = 1
-        self.enemies = Enemies:new(self.currentRound)  -- Create a new Enemies object with the current round
+        self.enemies = Enemies:new(self.currentRound)
     end
 end
 

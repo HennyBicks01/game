@@ -25,21 +25,37 @@ function Player:update(dt, width, height, enemies)
         local moved = false
         local oldX, oldY = self.x, self.y
 
-        if love.keyboard.isDown('w') then
+        -- Keyboard input
+        if love.keyboard.isDown('w') or love.keyboard.isDown('up') then
             self.y = self.y - self.speed * dt
             moved = true
         end
-        if love.keyboard.isDown('s') then
+        if love.keyboard.isDown('s') or love.keyboard.isDown('down') then
             self.y = self.y + self.speed * dt
             moved = true
         end
-        if love.keyboard.isDown('a') then
+        if love.keyboard.isDown('a') or love.keyboard.isDown('left') then
             self.x = self.x - self.speed * dt
             moved = true
         end
-        if love.keyboard.isDown('d') then
+        if love.keyboard.isDown('d') or love.keyboard.isDown('right') then
             self.x = self.x + self.speed * dt
             moved = true
+        end
+
+        -- Controller input
+        local joysticks = love.joystick.getJoysticks()
+        if #joysticks > 0 then
+            local joystick = joysticks[1]  -- Use the first connected joystick
+            local leftX = joystick:getAxis(1)
+            local leftY = joystick:getAxis(2)
+            
+            -- Apply deadzone
+            if math.abs(leftX) > 0.2 or math.abs(leftY) > 0.2 then
+                self.x = self.x + leftX * self.speed * dt
+                self.y = self.y + leftY * self.speed * dt
+                moved = true
+            end
         end
 
         -- Keep the player within the screen boundaries
