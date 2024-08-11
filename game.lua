@@ -24,6 +24,7 @@ function Game:load()
     self.waveTimer = 60  -- 1 minute per wave
     self.waveNumber = 1
     self.upgrades = Upgrades
+    self.currentUpgrades = {}
     self.selectedUpgrade = 1
 end
 
@@ -47,11 +48,13 @@ function Game:update(dt)
             self.gameState = 'upgrade'
             self.waveNumber = self.waveNumber + 1
             self.waveTimer = 60
+            self.currentUpgrades = self.upgrades:getRandomUpgrades()
+            self.selectedUpgrade = 1
         end
 
         -- Update players
         for i, player in ipairs(self.players) do
-            local moved, oldX, oldY = player:update(dt, love.graphics.getWidth(), love.graphics.getHeight())
+            local moved, oldX, oldY = player:update(dt, love.graphics.getWidth(), love.graphics.getHeight(), self.enemies.list)
             if moved and i == self.localPlayerIndex then
                 local updateData = {x = player.x, y = player.y, index = i}
                 if _G.server then
@@ -96,7 +99,9 @@ function Game:update(dt)
                 for j = #self.enemies.list, 1, -1 do
                     local enemy = self.enemies.list[j]
                     if self:checkCollision(bullet, enemy) then
-                        if not player.piercingShot then
+                        if bullet.piercing > 0 then
+                            bullet.piercing = bullet.piercing - 1
+                        else
                             table.remove(player.bullets, i)
                         end
                         table.remove(self.enemies.list, j)
@@ -112,7 +117,7 @@ function Game:checkCollision(bullet, enemy)
     local dx = bullet.x - enemy.x
     local dy = bullet.y - enemy.y
     local distance = math.sqrt(dx * dx + dy * dy)
-    return distance < (self.bulletRadius + enemy.radius)
+    return distance < (bullet.size + enemy.radius)
 end
 
 function Game:updateOtherPlayer(data)
@@ -198,7 +203,7 @@ function Game:draw()
     elseif self.gameState == 'upgrade' then
         love.graphics.setColor(1, 1, 1)
         love.graphics.printf("Choose an Upgrade", 0, 50, love.graphics.getWidth(), "center")
-        self.upgrades:draw(self.selectedUpgrade)
+        self.upgrades:draw(self.currentUpgrades, self.selectedUpgrade)
     end
 end
 
@@ -234,7 +239,7 @@ function Game:mousepressed(x, y, button)
 end
 
 function Game:selectUpgrade(index)
-    if self.upgrades:selectUpgrade(index, self.players[self.localPlayerIndex]) then
+    if self.upgrades:selectUpgrade(self.currentUpgrades, index, self.players[self.localPlayerIndex]) then
         self.gameState = 'countdown'
         self.countdown = 3
         self.countdownTimer = 1
