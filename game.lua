@@ -1,5 +1,6 @@
 local Enemies = require('enemies')
 local Upgrades = require('upgrades')
+local Player = require('player')
 
 local Game = {}
 
@@ -11,16 +12,7 @@ end
 
 function Game:load()
     self.players = {
-        {
-            x = 200,
-            y = 300,
-            radius = 20,
-            speed = 200,
-            color = {1, 0, 0},  -- Red
-            bullets = {},
-            doubleShot = false,
-            piercingShot = false
-        }
+        Player:new(200, 300, {1, 0, 0}, true)  -- Red, local player
     }
     self.localPlayerIndex = 1
     self.bulletSpeed = 400
@@ -36,14 +28,7 @@ function Game:load()
 end
 
 function Game:addPlayer(x, y)
-    table.insert(self.players, {
-        x = x,
-        y = y,
-        radius = 20,
-        speed = 200,
-        color = {0, 0, 1},  -- Blue
-        bullets = {}
-    })
+    table.insert(self.players, Player:new(x, y, {0, 0, 1}, false))  -- Blue, remote player
 end
 
 function Game:update(dt)
@@ -64,42 +49,29 @@ function Game:update(dt)
             self.waveTimer = 60
         end
 
-        -- Update player movement
-        local player = self.players[self.localPlayerIndex]
-        local moved = false
-        local oldX, oldY = player.x, player.y
-        
-        if love.keyboard.isDown('w') then
-            player.y = player.y - player.speed * dt
-            moved = true
+        -- Update players
+        for i, player in ipairs(self.players) do
+            local moved, oldX, oldY = player:update(dt, love.graphics.getWidth(), love.graphics.getHeight())
+            if moved and i == self.localPlayerIndex then
+                local updateData = {x = player.x, y = player.y, index = i}
+                if _G.server then
+                    _G.server:sendToAll('update', updateData)
+                elseif _G.client then
+                    _G.client:send('update', updateData)
+                end
+            end
         end
-        if love.keyboard.isDown('s') then
-            player.y = player.y + player.speed * dt
-            moved = true
-        end
-        if love.keyboard.isDown('a') then
-            player.x = player.x - player.speed * dt
-            moved = true
-        end
-        if love.keyboard.isDown('d') then
-            player.x = player.x + player.speed * dt
-            moved = true
-        end
-
-        -- Keep the player within the screen boundaries
-        player.x = math.max(player.radius, math.min(player.x, love.graphics.getWidth() - player.radius))
-        player.y = math.max(player.radius, math.min(player.y, love.graphics.getHeight() - player.radius))
 
         -- Update bullets
-        for i, p in ipairs(self.players) do
-            for j, bullet in ipairs(p.bullets) do
+        for _, player in ipairs(self.players) do
+            for j, bullet in ipairs(player.bullets) do
                 bullet.x = bullet.x + bullet.dx * dt
                 bullet.y = bullet.y + bullet.dy * dt
                 
                 -- Remove bullets that are off-screen
                 if bullet.x < 0 or bullet.x > love.graphics.getWidth() or
                    bullet.y < 0 or bullet.y > love.graphics.getHeight() then
-                    table.remove(p.bullets, j)
+                    table.remove(player.bullets, j)
                 end
             end
         end
@@ -157,23 +129,7 @@ end
 
 function Game:shoot(x, y)
     local player = self.players[self.localPlayerIndex]
-    local angle = math.atan2(y - player.y, x - player.x)
-    local createBullet = function(angle)
-        return {
-            x = player.x,
-            y = player.y,
-            dx = math.cos(angle) * self.bulletSpeed,
-            dy = math.sin(angle) * self.bulletSpeed
-        }
-    end
-
-    if player.doubleShot then
-        local spread = math.pi / 36  -- 5 degree spread
-        table.insert(player.bullets, createBullet(angle - spread))
-        table.insert(player.bullets, createBullet(angle + spread))
-    else
-        table.insert(player.bullets, createBullet(angle))
-    end
+    local angle = player:shoot(x, y, self.bulletSpeed)
 
     -- Send bullet data to other players
     local bulletData = {
