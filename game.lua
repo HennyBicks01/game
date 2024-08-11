@@ -17,7 +17,8 @@ function Game:load()
     self.localPlayerIndex = 1
     self.bulletSpeed = 400
     self.bulletRadius = 5
-    self.enemies = Enemies:new()
+    self.currentRound = 1  -- Initialize the current round
+    self.enemies = Enemies:new(self.currentRound)
     self.gameState = 'countdown'
     self.countdown = 3
     self.countdownTimer = 1
@@ -47,6 +48,7 @@ function Game:update(dt)
         if self.waveTimer <= 0 then
             self.gameState = 'upgrade'
             self.waveNumber = self.waveNumber + 1
+            self.currentRound = self.currentRound + 1  -- Increment the current round
             self.waveTimer = 60
             self.currentUpgrades = self.upgrades:getRandomUpgrades()
             self.selectedUpgrade = 1
@@ -203,6 +205,7 @@ function Game:draw()
     elseif self.gameState == 'upgrade' then
         love.graphics.setColor(1, 1, 1)
         love.graphics.printf("Choose an Upgrade", 0, 50, love.graphics.getWidth(), "center")
+        self.enemies:nextRound()
         self.upgrades:draw(self.currentUpgrades, self.selectedUpgrade)
     end
 end
@@ -243,6 +246,7 @@ function Game:selectUpgrade(index)
         self.gameState = 'countdown'
         self.countdown = 3
         self.countdownTimer = 1
+        self.enemies = Enemies:new(self.currentRound)  -- Create a new Enemies object with the current round
     end
 end
 

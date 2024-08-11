@@ -1,20 +1,27 @@
 local Enemies = {}
 
-function Enemies:new()
+function Enemies:new(round)
     local enemies = setmetatable({}, { __index = self })
     enemies.list = {}
     enemies.spawnTimer = 0
-    enemies.spawnInterval = 2  -- Spawn an enemy every 2 seconds
-    enemies.speed = 50  -- Enemy movement speed
+    enemies.baseSpawnInterval = 0.5 
+    enemies.round = round or 1
+    enemies:updateSpawnRate()
+    enemies.speed = 50 + (round - 1) * 5  
     return enemies
+end
+
+function Enemies:updateSpawnRate()
+    -- Decrease spawn interval (increase spawn rate) as rounds progress
+    self.spawnInterval = self.baseSpawnInterval / math.sqrt(self.round)
 end
 
 function Enemies:update(dt, players)
     -- Update spawn timer
     self.spawnTimer = self.spawnTimer + dt
-    if self.spawnTimer >= self.spawnInterval then
+    while self.spawnTimer >= self.spawnInterval do
         self:spawn()
-        self.spawnTimer = 0
+        self.spawnTimer = self.spawnTimer - self.spawnInterval
     end
 
     -- Update existing enemies
@@ -83,6 +90,12 @@ function Enemies:draw()
     for _, enemy in ipairs(self.list) do
         love.graphics.circle('fill', enemy.x, enemy.y, enemy.radius)
     end
+end
+
+function Enemies:nextRound()
+    self.round = self.round + 1
+    self:updateSpawnRate()
+    self.speed = self.speed + 5  -- Increase enemy speed each round
 end
 
 return Enemies
